@@ -32,18 +32,18 @@ export function Navbar() {
           id="navbar__right"
         >
           <li>
-            <a href="#bio">bio</a>
-          </li>
-          <li>
             <a href="#skills">skills</a>
           </li>
           <li>
-            <a href="#projects">projekte</a>
+            <a href="#bio">bio</a>
           </li>
 
           <li>
-            <a href="#">kontakt</a>
+            <a href="#projects">projekte</a>
           </li>
+          {/* <li>
+            <a href="#">kontakt</a>
+          </li> */}
         </ul>
         <BurgerMenu />
       </nav>

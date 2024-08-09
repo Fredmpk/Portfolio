@@ -2,6 +2,7 @@ import { Bio } from "./components/bio";
 import { Footer } from "./components/footer";
 import Hero from "./components/hero";
 import Projects from "./components/projects";
+import ScrollToTopButton from "./components/scroll-to-top-button";
 import { Skills } from "./components/skills";
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
         {/*<section id="contact"><Contact /></section>  */}
       </main>
       <Footer />
+      <ScrollToTopButton />
     </>
   );
 }
