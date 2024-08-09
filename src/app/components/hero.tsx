@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 
 export default function Hero() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -33,14 +34,22 @@ export default function Hero() {
           } bg-introorange opacity-90 p-4 mx-4 mt-20 sm:mt-48
            rounded-lg text-lg`}
         >
-          <div className="">
-            <button onClick={handleHi}>
+          <div>
+            <button className="hover:font-bold" onClick={handleHi}>
               <p>Hi!</p>
               <p className={`${isOpen ? "hidden" : "block"}`}>
                 Hast du einen Job für mich?
               </p>
+              <span className={`text-xl ${isOpen ? "hidden" : "block"}`}>
+                <FaAngleDown /> {/* Arrow Down Icon */}
+              </span>
+              <span className={`text-xl ${isOpen ? "block" : "hidden"}`}>
+                <FaAngleUp /> {/* Arrow Up Icon */}
+              </span>
             </button>
-            <p className={`${isOpen ? "block" : "hidden"} text-base`}>
+            <p
+              className={`${isOpen ? "block" : "hidden"} text-base md:text-lg`}
+            >
               Ich bin ein Quereinsteiger mit Leidenschaft für Sprachen, Kultur
               und Technologie. Mein Weg führte mich von den Geistes- und
               Sprachwissenschaften über Handwerk und Übersetzen bis zum Coding.
