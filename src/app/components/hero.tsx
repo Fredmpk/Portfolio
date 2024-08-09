@@ -11,17 +11,17 @@ export default function Hero() {
   return (
     <div>
       <section className="bg-cover bg-center h-[88vw] bg-[url('/images/hero.png')] ">
-        <div className="grid grid-rows-[9vw_4.5vw_4vw_4vw_1vw_0vw_4.5vw] grid-cols-[4vw_32vw_33vw_3vw_28vw] gap-0 text-[clamp(1rem,0.5843rem+1.7738vw,2.5rem)] lowercase md:uppercase">
+        <div className="grid grid-rows-[8vw_4.5vw_5vw_4vw_1vw_0vw_4.5vw] grid-cols-[4vw_32vw_33vw_3vw_28vw] gap-0 text-[clamp(1rem,0.5843rem+1.7738vw,2.5rem)] lowercase md:uppercase">
           <a
-            href="#translation"
-            className="bg-handyellow rounded-[50%] flex justify-center items-center p-3 md:p-5 row-start-4 row-span-2 col-start-2"
+            href="#webdev"
+            className="bg-handyellow rounded-[50%] flex justify-center items-center p-[4vw] sm:p-[3vw] row-start-3 md:row-start-4 row-span-2 col-start-2"
           >
             WEBENTWICKLUNG
           </a>
 
           <a
             href="#translation"
-            className="bg-transgreen w-30 rounded-[50%] flex justify-center items-center p-3 md:p-5 row-start-5 row-span-3 col-start-4 col-span-2"
+            className="bg-transgreen w-30 rounded-[50%] flex justify-center items-center p-[4vw] sm:p-[3vw] row-start-4 md:row-start-5 row-span-3 col-start-4 col-span-2"
           >
             ÜBERSETZUNGEN
           </a>

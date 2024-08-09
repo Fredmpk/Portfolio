@@ -1,10 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FaMapMarkerAlt, FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 
 export function Bio() {
   return (
-    <section className="bg-gradient-to-br from-handyellow to-introorange min-h-screen ">
+    <section className="bg-gradient-to-br from-handyellow to-introorange pb-5 ">
       <div
         className="title__projects flex justify-center bg-transgreen w-full p-[3vw] mb-[3vw]"
         id="bio"
@@ -29,12 +30,26 @@ export function Bio() {
             </p>
             <p className="text-lg mb-4">Frontend-Entwickler | Übersetzer</p>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-gray-300">
-                <FaGithub size={24} />
-              </a>
-              <a href="#" className=" hover:text-gray-300">
-                <FaLinkedin size={24} />
-              </a>
+              <Link
+                href="https://github.com/Fredmpk"
+                passHref
+                legacyBehavior
+                className="hover:text-gray-300"
+              >
+                <a target="_blank">
+                  <FaGithub size={24} />
+                </a>
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/frederik-k%C3%B6nig-161161161161161161161"
+                passHref
+                legacyBehavior
+                className=" hover:text-gray-300"
+              >
+                <a target="_blank">
+                  <FaLinkedin size={24} />
+                </a>
+              </Link>
             </div>
           </div>
         </div>
