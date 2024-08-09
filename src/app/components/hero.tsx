@@ -11,7 +11,8 @@ export default function Hero() {
   }
   return (
     <div>
-      <section className="bg-cover bg-center h-[88vw] bg-[url('/images/hero.png')] ">
+      <div className="h-[15vh] w-full bg-backgroundwhite md:hidden"></div>
+      <section className="bg-cover bg-center h-[88vw] bg-[url('/images/hero.png')]">
         <div className="grid grid-rows-[8vw_4.5vw_5vw_4vw_1vw_0vw_4.5vw] grid-cols-[2vw_38vw_29vw_3vw_28vw] gap-0 text-[clamp(1rem,0.5843rem+1.7738vw,2.5rem)] lowercase md:uppercase">
           <a
             href="#webdev"

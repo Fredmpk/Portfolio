@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        backgroundwhite: "#FAFCF9",
         handyellow: "#FAF0DE",
         webbrightgreen: "#E4E6DC",
         transgreen: "#9FBAA9",
