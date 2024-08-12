@@ -2,21 +2,37 @@
 
 import { useState } from "react";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
-
+import Image from "next/image";
 export default function Hero() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [showWebDevPhoto, setShowWebDevPhoto] = useState(false);
 
   function handleHi() {
     setIsOpen(!isOpen);
   }
+  function toggleWebDevPhoto() {
+    setShowWebDevPhoto(!showWebDevPhoto);
+  }
+
   return (
     <div>
       <div className="h-[15vh] w-full bg-backgroundwhite md:hidden"></div>
-      <section className="bg-cover bg-center h-[88vw] bg-[url('/images/hero.png')]">
-        <div className="grid grid-rows-[8vw_4.5vw_5vw_4vw_1vw_0vw_4.5vw] grid-cols-[2vw_38vw_29vw_3vw_28vw] gap-0 text-[clamp(1rem,0.5843rem+1.7738vw,2.5rem)] lowercase md:uppercase">
+
+      {/* <section className={`bg-cover bg-center h-[88vw] ${showWebDevPhoto ? "bg-[url('/images/hermirror.png')]" : "bg-[url('/images/hero.png')]"}`}></section> */}
+      <section
+        className={`bg-cover bg-center h-[88vw] ${
+          showWebDevPhoto
+            ? "bg-[url('/images/heromirror.png')]"
+            : "bg-[url('/images/hero.png')]"
+        }`}
+      >
+        <div className="grid grid-rows-[8vw_4.5vw_2vw_4vw_1vw_0vw_4.5vw] grid-cols-[2vw_38vw_29vw_3vw_28vw] gap-0 text-[clamp(1rem,0.5843rem+1.7738vw,2.5rem)] lowercase md:uppercase">
           <a
             href="#webdev"
             className="bg-handyellow rounded-[50%] flex justify-center items-center px-[10vw] py-[5vw] xs:p-[4vw] sm:p-[3vw] row-start-3 md:row-start-4 row-span-2 col-start-2"
+            onClick={toggleWebDevPhoto}
+            onMouseEnter={() => setShowWebDevPhoto(true)}
+            onMouseLeave={() => setShowWebDevPhoto(false)}
           >
             {" "}
             WEBENTWICKLUNG{" "}
