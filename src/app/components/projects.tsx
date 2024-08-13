@@ -6,7 +6,7 @@ export function Projects() {
   return (
     <section className="projects-container bg-[#343F4F]">
       <div
-        className="title__projects flex justify-center bg-green w-full p-[3vw]"
+        className="title__projects flex justify-center bg-transgreen w-full p-[3vw]"
         id="projects"
       >
         <h1 className="tracking-wide text-xl md:text-3xl font-bold">

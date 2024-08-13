@@ -7,7 +7,7 @@ export function Bio() {
   return (
     <section className="bg-gradient-to-br from-handyellow to-introorange pb-5 ">
       <div
-        className="title__projects flex justify-center bg-transgreen w-full p-[3vw] mb-[3vw]"
+        className="title__projects flex justify-center bg-green w-full p-[3vw] mb-[3vw]"
         id="bio"
       >
         <h1 className="tracking-wide text-xl md:text-3xl font-bold">BIO</h1>
