@@ -1,11 +1,16 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import Image from "next/image";
 export default function Hero() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [showWebDevPhoto, setShowWebDevPhoto] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
 
   function handleHi() {
     setIsOpen(!isOpen);
@@ -29,7 +34,11 @@ export default function Hero() {
         <div className="grid grid-rows-[8vw_4.5vw_2vw_4vw_1vw_0vw_4.5vw] grid-cols-[2vw_38vw_29vw_3vw_28vw] gap-0 text-[clamp(1rem,0.5843rem+1.7738vw,2.5rem)] lowercase md:uppercase">
           <a
             href="#webdev"
-            className="bg-handyellow rounded-[50%] flex justify-center items-center px-[10vw] py-[5vw] xs:p-[4vw] sm:p-[3vw] row-start-3 md:row-start-4 row-span-2 col-start-2"
+            className={` bg-handyellow rounded-[50%] flex justify-center items-center px-[10vw] py-[5vw] xs:p-[4vw] sm:p-[3vw] row-start-3 md:row-start-4 row-span-2 col-start-2 transition-all duration-700 ease-out ${
+              isLoaded
+                ? "opacity-100 translate-x-0"
+                : "opacity-0 -translate-x-full"
+            }`}
             onClick={toggleWebDevPhoto}
             onMouseEnter={() => setShowWebDevPhoto(true)}
             onMouseLeave={() => setShowWebDevPhoto(false)}
@@ -40,16 +49,21 @@ export default function Hero() {
 
           <a
             href="#translation"
-            className="bg-transgreen w-30 rounded-[50%] flex justify-center items-center p-[5vw] xs:p-[4vw] sm:p-[3vw] row-start-4 md:row-start-5 row-span-3 col-start-4 col-span-2"
+            className={`bg-transgreen w-30 rounded-[50%] flex justify-center items-center p-[5vw] xs:p-[4vw] sm:p-[3vw] row-start-4 md:row-start-5 row-span-3 col-start-4 col-span-2 transition-all duration-700 ease-out ${
+              isLoaded
+                ? "opacity-100 translate-x-0"
+                : "opacity-0 translate-x-full"
+            }`}
           >
             ÜBERSETZUNGEN
           </a>
         </div>
         <div
-          className={`${
-            isOpen ? "7/8 md:w-4/5" : "w-1/3"
-          } bg-introorange opacity-90 p-4 mx-4 mt-20 sm:mt-48
-           rounded-lg text-lg`}
+          style={{ transitionDuration: "2000ms" }}
+          className={`transition-transform ease-out
+    ${isLoaded ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-full"}
+    ${isOpen ? "w-7/8 md:w-4/5" : "w-1/3"}
+    bg-introorange opacity-90 p-4 mx-4 mt-20 sm:mt-48 rounded-lg text-lg`}
         >
           <div>
             <button className="hover:font-bold" onClick={handleHi}>

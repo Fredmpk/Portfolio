@@ -30,6 +30,10 @@ const config: Config = {
         xl: "1280px",
         "2xl": "1536px",
       },
+      transitionDuration: {
+        "5000": "5000ms",
+        "10000": "10000ms",
+      },
     },
   },
   plugins: [],
