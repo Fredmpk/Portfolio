@@ -34,7 +34,8 @@ export default function Hero() {
         <div className="grid grid-rows-[8vw_4.5vw_2vw_4vw_1vw_0vw_4.5vw] grid-cols-[2vw_38vw_29vw_3vw_28vw] gap-0 text-[clamp(1rem,0.5843rem+1.7738vw,2.5rem)] lowercase md:uppercase">
           <a
             href="#webdev"
-            className={` bg-handyellow rounded-[50%] flex justify-center items-center px-[10vw] py-[5vw] xs:p-[4vw] sm:p-[3vw] row-start-3 md:row-start-4 row-span-2 col-start-2 transition-all duration-700 ease-out ${
+            style={{ transitionDuration: "1000ms" }}
+            className={` bg-handyellow rounded-[50%] flex justify-center items-center px-[10vw] py-[5vw] xs:p-[4vw] sm:p-[3vw] row-start-3 md:row-start-4 row-span-2 col-start-2 transition-all ease-out ${
               isLoaded
                 ? "opacity-100 translate-x-0"
                 : "opacity-0 -translate-x-full"
@@ -49,7 +50,8 @@ export default function Hero() {
 
           <a
             href="#translation"
-            className={`bg-transgreen w-30 rounded-[50%] flex justify-center items-center p-[5vw] xs:p-[4vw] sm:p-[3vw] row-start-4 md:row-start-5 row-span-3 col-start-4 col-span-2 transition-all duration-700 ease-out ${
+            style={{ transitionDuration: "1500ms" }}
+            className={`bg-transgreen w-30 rounded-[50%] flex justify-center items-center p-[5vw] xs:p-[4vw] sm:p-[3vw] row-start-4 md:row-start-5 row-span-3 col-start-4 col-span-2 transition-all ease-out ${
               isLoaded
                 ? "opacity-100 translate-x-0"
                 : "opacity-0 translate-x-full"
@@ -59,18 +61,16 @@ export default function Hero() {
           </a>
         </div>
         <div
-          style={{ transitionDuration: "2000ms" }}
-          className={`transition-transform ease-out
+          style={{ transitionDuration: "2500ms" }}
+          className={`transition-transform ease-out flex justify-center
     ${isLoaded ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-full"}
-    ${isOpen ? "w-7/8 md:w-4/5" : "w-1/3"}
-    bg-introorange opacity-90 p-4 mx-4 mt-20 sm:mt-48 rounded-lg text-lg`}
+    ${isOpen ? "w-7/8 md:w-4/5" : "w-1/5 ml-[9vw]"}
+    bg-introorange opacity-90 p-[2vw] mx-4 mt-20 sm:mt-48 rounded-lg text-base md:text-lg`}
         >
           <div>
             <button className="hover:font-bold" onClick={handleHi}>
               <p>Hi!</p>
-              <p className={`${isOpen ? "hidden" : "block"}`}>
-                Hast du einen Job für mich?
-              </p>
+              <p className={`${isOpen ? "hidden" : "block"}`}>Ich bin ...</p>
               <span className={`text-xl ${isOpen ? "hidden" : "block"}`}>
                 <FaAngleDown /> {/* Arrow Down Icon */}
               </span>

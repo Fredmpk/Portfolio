@@ -6,12 +6,12 @@ export function Footer() {
     <footer className="flex flex-col sm:flex-row bg-footerdarkgreen align-center items-center justify-between py-[3vw] px-[2vw] text-white font-sm sm:font-base font-bold gap-[2vw] sm:gap-0">
       <ul className="flex gap-[3vw]">
         <li>
-          <a href="#" className="hover:underline">
+          <a href="/impressum" className="hover:underline">
             Impressum
           </a>
         </li>
         <li>
-          <a className="hover:underline" href="#">
+          <a className="hover:underline" href="/datenschutz">
             Datenschutz
           </a>
         </li>

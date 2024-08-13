@@ -1,5 +1,6 @@
 import React from "react";
 import { BurgerMenu } from "./burger-menu";
+import Link from "next/link";
 
 export function Navbar() {
   return (
@@ -25,21 +26,23 @@ export function Navbar() {
               stroke-linejoin="round"
             />
           </svg>
-          <span className=" md:ml-4">FREDERIK KÖNIG</span>
+          <Link href="/" className=" md:ml-4">
+            FREDERIK KÖNIG
+          </Link>
         </div>
         <ul
           className="items-center gap-4 md:gap-9 hidden md:flex"
           id="navbar__right"
         >
           <li>
-            <a href="#skills">skills</a>
+            <Link href="/#skills">skills</Link>
           </li>
           <li>
-            <a href="#bio">bio</a>
+            <Link href="/#bio">bio</Link>
           </li>
 
           <li>
-            <a href="#projects">projekte</a>
+            <Link href="/#projects">projekte</Link>
           </li>
           {/* <li>
             <a href="#">kontakt</a>

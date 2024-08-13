@@ -1,8 +1,9 @@
+import { Footer } from "./components/footer";
 import { Navbar } from "./components/navbar";
 import "./globals.css";
 
 export const metadata = {
-  title: "Mein Portfolio",
+  title: "Frederik König",
   description: "Mein persönliches Portfolio",
 };
 
@@ -13,10 +14,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="de">
-      <body>
+      <body className="flex flex-col min-h-screen">
         <Navbar />
-        {children}
-        <footer>{/* Fußzeileninhalte hier */}</footer>
+        <main className="flex-grow">{children}</main>
+        <footer>
+          <Footer />
+        </footer>
       </body>
     </html>
   );
