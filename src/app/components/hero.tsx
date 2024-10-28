@@ -35,7 +35,7 @@ export default function Hero() {
           <a
             href="#webdev"
             style={{ transitionDuration: "1000ms" }}
-            className={` bg-handyellow rounded-[50%] flex justify-center items-center px-[10vw] py-[5vw] xs:p-[4vw] sm:p-[3vw] row-start-3 md:row-start-4 row-span-2 col-start-2 transition-all ease-out ${
+            className={` bg-handyellow rounded-[50%] flex justify-center items-center px-[10vw] py-[5vw] xs:p-[4vw] sm:p-[3vw] row-start-3 md:row-start-4 row-span-2 col-start-2 transition-alln ease-out ${
               isLoaded
                 ? "opacity-100 translate-x-0"
                 : "opacity-0 -translate-x-full"

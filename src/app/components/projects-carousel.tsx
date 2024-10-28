@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useSwipeable } from "react-swipeable";
+import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
 
 const cards = [
   {
@@ -99,13 +101,13 @@ export function Carousel({ interval = 5000 }) {
         onClick={prevSlide}
         className="hidden md:block absolute top-1/2 left-4 transform -translate-y-1/2 bg-white bg-opacity-50 rounded-full p-2"
       >
-        ←
+        <IoIosArrowBack></IoIosArrowBack>
       </button>
       <button
         onClick={nextSlide}
         className="hidden md:block absolute top-1/2 right-4 transform -translate-y-1/2 bg-white bg-opacity-50 rounded-full p-2"
       >
-        →
+        <IoIosArrowForward></IoIosArrowForward>
       </button>
     </div>
   );
