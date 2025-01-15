@@ -3,10 +3,38 @@
 import { useState, useEffect } from "react";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import Image from "next/image";
+import { TypewriterEffect } from "./ui/typewriter-effect";
 export default function Hero() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [showWebDevPhoto, setShowWebDevPhoto] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
+  const [showFirst, setShowFirst] = useState(false);
+  const [showSecond, setShowSecond] = useState(false);
+  const [showThird, setShowThird] = useState(false);
+
+  useEffect(() => {
+    // Start first typewriter after 2 seconds
+    const firstTimer = setTimeout(() => {
+      setShowFirst(true);
+    }, 2000);
+
+    // Start second typewriter after 6 seconds
+    const secondTimer = setTimeout(() => {
+      setShowSecond(true);
+    }, 6000);
+
+    // Start third typewriter after 10 seconds
+    const thirdTimer = setTimeout(() => {
+      setShowThird(true);
+    }, 12000);
+
+    // Cleanup timers
+    return () => {
+      clearTimeout(firstTimer);
+      clearTimeout(secondTimer);
+      clearTimeout(thirdTimer);
+    };
+  }, []);
 
   useEffect(() => {
     setIsLoaded(true);
@@ -18,6 +46,126 @@ export default function Hero() {
   function toggleWebDevPhoto() {
     setShowWebDevPhoto(!showWebDevPhoto);
   }
+
+  const words = [
+    {
+      text: "Hi,",
+      className: "text-xl text-white italic font-normal ",
+    },
+
+    {
+      text: "i'm",
+
+      className: "text-xl text-white italic font-normal",
+    },
+    {
+      text: "Fred,",
+
+      className: "text-xl text-white italic font-normal",
+    },
+    {
+      text: "an",
+
+      className: "text-xl text-white italic font-normal",
+    },
+    {
+      text: "aspiring",
+      className: "text-xl text-white italic font-normal",
+    },
+    {
+      text: "frontend",
+      className: "text-xl text-white italic font-normal",
+    },
+    {
+      text: " developer.",
+      className: "text-xl text-white italic font-normal",
+    },
+  ];
+
+  const wordstwo = [
+    {
+      text: "I ",
+      className: "text-xl text-white italic font-normal",
+    },
+    {
+      text: " studied ",
+      className: "text-xl text-white italic font-normal",
+    },
+    {
+      text: " translation",
+      className: "text-xl text-white italic font-normal",
+    },
+    {
+      text: " and",
+      className: "text-xl text-white italic font-normal",
+    },
+    {
+      text: "then ",
+      className: "text-xl text-white italic font-normal",
+    },
+    {
+      text: " found ",
+      className: "text-xl text-white italic font-normal",
+    },
+    {
+      text: " my ",
+      className: "text-xl text-white italic font-normal",
+    },
+    {
+      text: " passion ",
+      className: "text-xl text-white italic font-normal",
+    },
+    {
+      text: " in",
+      className: "text-xl text-white italic font-normal",
+    },
+    {
+      text: " coding.",
+      className: "text-xl text-white italic font-normal",
+    },
+  ];
+  const wordsthree = [
+    {
+      text: "Now",
+      className: "text-xl text-white italic font-normal",
+    },
+    {
+      text: "I'm ",
+      className: "text-xl text-white italic font-normal",
+    },
+    {
+      text: "looking",
+      className: "text-xl text-white italic font-normal",
+    },
+    {
+      text: "for",
+      className: "text-xl text-white italic font-normal",
+    },
+    {
+      text: "a",
+      className: "text-xl text-white italic font-normal",
+    },
+    {
+      text: "cool",
+      className: "text-xl text-white italic font-normal",
+    },
+    {
+      text: "job",
+      className: "text-xl text-white italic font-normal",
+    },
+    {
+      text: "to",
+      className: "text-xl text-white italic font-normal",
+    },
+    {
+      text: "combine",
+      className: "text-xl text-white italic font-normal",
+    },
+    {
+      text: "both.",
+      className: "text-xl text-white italic font-normal",
+    },
+  ];
 
   return (
     <div>
@@ -35,7 +183,7 @@ export default function Hero() {
           <a
             href="#webdev"
             style={{ transitionDuration: "1000ms" }}
-            className={` bg-handyellow rounded-[50%] flex justify-center items-center px-[10vw] py-[5vw] xs:p-[4vw] sm:p-[3vw] row-start-3 md:row-start-4 row-span-2 col-start-2 transition-alln ease-out ${
+            className={` bg-handyellow rounded-[50%] flex justify-center items-center px-[10vw] py-[5vw] xs:p-[4vw] sm:p-[3vw] row-start-3 md:row-start-4 row-span-2 col-start-2 transition-all ease-out ${
               isLoaded
                 ? "opacity-100 translate-x-0"
                 : "opacity-0 -translate-x-full"
@@ -45,7 +193,7 @@ export default function Hero() {
             onMouseLeave={() => setShowWebDevPhoto(false)}
           >
             {" "}
-            WEBENTWICKLUNG{" "}
+            WEB DEVELOPMENT{" "}
           </a>
 
           <a
@@ -57,41 +205,26 @@ export default function Hero() {
                 : "opacity-0 translate-x-full"
             }`}
           >
-            ÜBERSETZUNGEN
+            TRANSLATION
           </a>
         </div>
         <div
-          style={{ transitionDuration: "2500ms" }}
-          className={`transition-transform ease-out flex justify-center
-    ${isLoaded ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-full"}
-    ${isOpen ? "w-7/8 md:w-4/5" : "w-1/5 ml-[9vw]"}
-    bg-introorange opacity-90 p-[2vw] mx-4 mt-20 sm:mt-48 rounded-lg text-base md:text-lg`}
+          style={{
+            transitionDuration: "10000ms",
+            backgroundImage: "url('/images/screen.png')",
+          }}
+          className={`relative h-[80vh] w-full bg-center bg-no-repeat bg-[length:140%_80%] ${
+            isLoaded ? "opacity-95" : "opacity-0"
+          }`}
         >
-          <div>
-            <button className="hover:font-bold" onClick={handleHi}>
-              <p>Hi!</p>
-              <p className={`${isOpen ? "hidden" : "block"}`}>Ich bin ...</p>
-              <span className={`text-xl ${isOpen ? "hidden" : "block"}`}>
-                <FaAngleDown /> {/* Arrow Down Icon */}
-              </span>
-              <span className={`text-xl ${isOpen ? "block" : "hidden"}`}>
-                <FaAngleUp /> {/* Arrow Up Icon */}
-              </span>
-            </button>
-            <p
-              className={`${isOpen ? "block" : "hidden"} text-base md:text-lg`}
-            >
-              Ich bin ein Quereinsteiger mit Leidenschaft für Sprachen, Kultur
-              und Technologie. Mein Weg führte mich von den Geistes- und
-              Sprachwissenschaften über Handwerk und Übersetzen bis zum Coding.
-              Ende September werde ich mein Frontend-Development-Bootcamp
-              abschließen und kann es kaum erwarten, meine neuen Fähigkeiten mit
-              meinen bisherigen Erfahrungen zu verbinden! Ich bin auf der Suche
-              nach einem Team, das Vielfalt schätzt und einen Job bei dem ich
-              mich und meine Talente voll entfalten kann. Lasst uns gemeinsam
-              spannende Projekte gestalten!
-            </p>
-          </div>
+            <div className="absolute top-[35%] left-[17%] w-[70%] ">
+              <div className="relative z-10 animate-[fadeIn_2s_ease-in_3s]">
+              {showFirst && <TypewriterEffect words={words} />}
+      {showSecond && <TypewriterEffect words={wordstwo} />}
+      {showThird && <TypewriterEffect words={wordsthree} />}
+              </div>
+            </div>
+          )}
         </div>
       </section>
       <div

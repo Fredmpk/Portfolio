@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,8 +12,21 @@ import {
   faFigma,
   faGit,
 } from "@fortawesome/free-brands-svg-icons";
+import { useRef } from "react";
+import { useInView } from "motion/react";
 
 export function Skills() {
+  const webdevRef = useRef(null);
+  const translationRef = useRef(null);
+  const isWebdevInView = useInView(webdevRef, {
+    once: false,
+    margin: "0px 0px -300px 0px",
+  });
+  const isTranslationInView = useInView(translationRef, {
+    once: false,
+    margin: "0px 0px -300px 0px",
+  });
+
   return (
     <section className="">
       <div id="skills" className="absolute top-[11vw] md:top-[12vw]"></div>
@@ -20,7 +35,13 @@ export function Skills() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 w-full">
         <div
-          className="py-[4vw] px-[5vw] md:row-start-1 md:col-start-1 md:col-span-2 bg-webbrightgreen order-1"
+          ref={webdevRef}
+          style={{
+            transform: isWebdevInView ? "none" : "translateX(-100%)",
+            opacity: isWebdevInView ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+          }}
+          className={`py-[4vw] px-[5vw] md:row-start-1 md:col-start-1 md:col-span-2 bg-webbrightgreen order-1 }`}
           id="webdev"
         >
           <h2 className="pl-[3vw] font-bold tracking-wide text-lg md:text-xl">
@@ -35,7 +56,7 @@ export function Skills() {
             bin ständig auf der Suche nach neuen Technologien und
             Lernmöglichkeiten, um meine Fähigkeiten weiter zu verbessern.
           </p>
-          <div className="grid grid-cols-4 md:grid-cols-7 gap-[3vw] mt-4 text-base md:text-lg">
+          <div className="grid grid-cols-4 lg:grid-cols-7 gap-[3vw] mt-4 text-base md:text-lg">
             <div className="flex flex-col items-center">
               <FontAwesomeIcon
                 icon={faHtml5}
@@ -55,7 +76,7 @@ export function Skills() {
                 icon={faJsSquare}
                 className="h-12 w-12 text-yellow-500 mb-2"
               />
-              <span>JavaScript</span>
+              <span className="mx-1">JavaScript</span>
             </div>
             <div className="flex flex-col items-center">
               <Image
@@ -65,7 +86,7 @@ export function Skills() {
                 height={150}
                 className="h-12 w-12 mb-2"
               />
-              <span>TypeScript</span>
+              <span className="">TypeScript</span>
             </div>
             <div className="flex flex-col items-center">
               <FontAwesomeIcon
@@ -136,7 +157,7 @@ export function Skills() {
         </div>
         <div className="md:row-start-1 md:col-start-3 order-2">
           <Image
-            src="/images/web.png"
+            src="/images/Fotoshoot-pc.jpg"
             alt="Arbeitsplatz mit Computer in schöner Natur"
             width={500}
             height={500}
@@ -153,6 +174,12 @@ export function Skills() {
           />
         </div>
         <div
+          ref={translationRef}
+          style={{
+            transform: isTranslationInView ? "none" : "translateX(100%)",
+            opacity: isTranslationInView ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+          }}
           className="py-[4vw] px-[5vw] md:row-start-2 md:col-start-2 md:col-span-2 bg-transgreen order-3 md:order-4"
           id="translation"
         >

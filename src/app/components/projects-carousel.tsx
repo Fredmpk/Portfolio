@@ -25,6 +25,12 @@ const cards = [
     content:
       "Für mein nächstes Projekt möchte ich mich dem Thema Steuerbetrug und Sozialbetrug widmen. Ich plane, eine App zu entwickeln, die die offiziellen statistischen Daten zu diesen Themen aufbereitet und in Beziehung zueinander setzt. Mithilfe von anschaulichen Animationen und interaktiven Funktionen soll den Nutzerinnen und Nutzern ein Einblick in die finanziellen Auswirkungen und Handlungsmöglichkeiten gegeben werden. Dabei werde ich auch Beispielrechnungen zur möglichen Verwendung der durch Steuerbetrug entzogenen Mittel für soziale Zwecke einbinden.",
   },
+  {
+    title: "Website für einen Fahrradmechaniker",
+    image: "/images/journeyman.png",
+    content:
+      "Dies ist mein erstes Projekt nach dem Bootcamp, ich gestalte die Website eines befreundeten Fahrradmechanikers. Für mich eine gute Gelegenheit das gelernte anzuwenden und mich auszuprobieren",
+  },
 ];
 export function Carousel({ interval = 5000 }) {
   const [currentIndex, setCurrentIndex] = useState(0);

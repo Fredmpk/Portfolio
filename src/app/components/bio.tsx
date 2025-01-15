@@ -16,7 +16,7 @@ export function Bio() {
         <div className="flex flex-col md:flex-row items-center justify-center mb-12">
           <div className="md:w-1/3 mb-8 md:mb-0">
             <Image
-              src="/images/portrait.png"
+              src="/images/fotoshoot-bio.jpg"
               alt="Frederik König"
               width={300}
               height={300}
