@@ -217,14 +217,13 @@ export default function Hero() {
             isLoaded ? "opacity-95" : "opacity-0"
           }`}
         >
-            <div className="absolute top-[35%] left-[17%] w-[70%] ">
-              <div className="relative z-10 animate-[fadeIn_2s_ease-in_3s]">
+          <div className="absolute top-[35%] left-[17%] w-[70%] ">
+            <div className="relative z-10 animate-[fadeIn_2s_ease-in_3s]">
               {showFirst && <TypewriterEffect words={words} />}
-      {showSecond && <TypewriterEffect words={wordstwo} />}
-      {showThird && <TypewriterEffect words={wordsthree} />}
-              </div>
+              {showSecond && <TypewriterEffect words={wordstwo} />}
+              {showThird && <TypewriterEffect words={wordsthree} />}
             </div>
-          )}
+          </div>
         </div>
       </section>
       <div
