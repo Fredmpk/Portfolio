@@ -50,120 +50,120 @@ export default function Hero() {
   const words = [
     {
       text: "Hi,",
-      className: "text-xl text-white italic font-normal ",
+      className: "text-md lg:text-xl text-white italic font-normal ",
     },
 
     {
       text: "i'm",
 
-      className: "text-xl text-white italic font-normal",
+      className: "text-md lg:text-xl text-white italic font-normal",
     },
     {
       text: "Fred,",
 
-      className: "text-xl text-white italic font-normal",
+      className: "text-md lg:text-xl text-white italic font-normal",
     },
     {
       text: "an",
 
-      className: "text-xl text-white italic font-normal",
+      className: "text-md lg:text-xl text-white italic font-normal",
     },
     {
       text: "aspiring",
-      className: "text-xl text-white italic font-normal",
+      className: "text-md lg:text-xl text-white italic font-normal",
     },
     {
       text: "frontend",
-      className: "text-xl text-white italic font-normal",
+      className: "text-md lg:text-xl text-white italic font-normal",
     },
     {
       text: " developer.",
-      className: "text-xl text-white italic font-normal",
+      className: "text-md lg:text-xl text-white italic font-normal",
     },
   ];
 
   const wordstwo = [
     {
       text: "I ",
-      className: "text-xl text-white italic font-normal",
+      className: "text-md lg:text-xl text-white italic font-normal",
     },
     {
       text: " studied ",
-      className: "text-xl text-white italic font-normal",
+      className: "text-md lg:text-xl text-white italic font-normal",
     },
     {
       text: " translation",
-      className: "text-xl text-white italic font-normal",
+      className: "text-md lg:text-xl text-white italic font-normal",
     },
     {
       text: " and",
-      className: "text-xl text-white italic font-normal",
+      className: "text-md lg:text-xl text-white italic font-normal",
     },
     {
       text: "then ",
-      className: "text-xl text-white italic font-normal",
+      className: "text-md lg:text-xl text-white italic font-normal",
     },
     {
       text: " found ",
-      className: "text-xl text-white italic font-normal",
+      className: "text-md lg:text-xl text-white italic font-normal",
     },
     {
       text: " my ",
-      className: "text-xl text-white italic font-normal",
+      className: "text-md lg:text-xl text-white italic font-normal",
     },
     {
       text: " passion ",
-      className: "text-xl text-white italic font-normal",
+      className: "text-md lg:text-xl text-white italic font-normal",
     },
     {
       text: " in",
-      className: "text-xl text-white italic font-normal",
+      className: "text-md lg:text-xl text-white italic font-normal",
     },
     {
       text: " coding.",
-      className: "text-xl text-white italic font-normal",
+      className: "text-md lg:text-xl text-white italic font-normal",
     },
   ];
   const wordsthree = [
     {
       text: "Now",
-      className: "text-xl text-white italic font-normal",
+      className: "text-md lg:text-xl text-white italic font-normal",
     },
     {
       text: "I'm ",
-      className: "text-xl text-white italic font-normal",
+      className: "text-md lg:text-xl text-white italic font-normal",
     },
     {
       text: "looking",
-      className: "text-xl text-white italic font-normal",
+      className: "text-md lg:text-xl text-white italic font-normal",
     },
     {
       text: "for",
-      className: "text-xl text-white italic font-normal",
+      className: "text-md lg:text-xl text-white italic font-normal",
     },
     {
       text: "a",
-      className: "text-xl text-white italic font-normal",
+      className: "text-md lg:text-xl text-white italic font-normal",
     },
     {
       text: "cool",
-      className: "text-xl text-white italic font-normal",
+      className: "text-md lg:text-xl text-white italic font-normal",
     },
     {
       text: "job",
-      className: "text-xl text-white italic font-normal",
+      className: "text-md lg:text-xl text-white italic font-normal",
     },
     {
       text: "to",
-      className: "text-xl text-white italic font-normal",
+      className: "text-md lg:text-xl text-white italic font-normal",
     },
     {
       text: "combine",
-      className: "text-xl text-white italic font-normal",
+      className: "text-md lg:text-xl text-white italic font-normal",
     },
     {
       text: "both.",
-      className: "text-xl text-white italic font-normal",
+      className: "text-md lg:text-xl text-white italic font-normal",
     },
   ];
 
@@ -213,11 +213,11 @@ export default function Hero() {
             transitionDuration: "10000ms",
             backgroundImage: "url('/images/screen.png')",
           }}
-          className={`relative h-[80vh] w-full bg-center bg-no-repeat bg-[length:140%_80%] ${
+          className={`relative h-full md:h-[80vh]  w-full bg-center bg-no-repeat md:bg-[length:140%_80%] ${
             isLoaded ? "opacity-95" : "opacity-0"
           }`}
         >
-          <div className="absolute top-[35%] left-[17%] w-[70%] ">
+          <div className="absolute top-[18%] w- md:top-[35%] p-1 left-[17%] w-[70%] ">
             <div className="relative z-10 animate-[fadeIn_2s_ease-in_3s]">
               {showFirst && <TypewriterEffect words={words} />}
               {showSecond && <TypewriterEffect words={wordstwo} />}
