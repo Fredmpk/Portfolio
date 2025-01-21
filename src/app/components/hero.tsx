@@ -211,14 +211,13 @@ export default function Hero() {
         <div
           style={{
             transitionDuration: "10000ms",
-            backgroundImage: "url('/images/screen.png')",
           }}
-          className={`relative h-full md:h-[80vh]  w-full bg-center bg-no-repeat md:bg-[length:140%_80%] ${
+          className={`bg-[url('/images/screen-sm.png')] sm:bg-[url('/images/screen.png')] relative h-3/4 sm:h-[80vh]  w-full bg-center bg-no-repeat bg-[length:150%_85%] xs:bg-[length:150%_75%] md:bg-[length:140%_80%] ${
             isLoaded ? "opacity-95" : "opacity-0"
           }`}
         >
-          <div className="absolute top-[18%] w- md:top-[35%] p-1 left-[17%] w-[70%] ">
-            <div className="relative z-10 animate-[fadeIn_2s_ease-in_3s]">
+          <div className="absolute top-[23%] xs:top-[30%] md:top-[35%] sm:left-[17%] left-[19%] xs:left-[18%] w-[70%]">
+            <div className="relative pr-3 xs:p-8 z-10 animate-[fadeIn_2s_ease-in_3s]">
               {showFirst && <TypewriterEffect words={words} />}
               {showSecond && <TypewriterEffect words={wordstwo} />}
               {showThird && <TypewriterEffect words={wordsthree} />}
