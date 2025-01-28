@@ -34,16 +34,41 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="bg-bluepull mt-12 md:mt-24 flex flex-col md:flex-row">
+    <div
+      className="bg-bluepull mt-12 md:mt-24 flex flex-col md:flex-row text-white
+"
+    >
       <div
-        className={`bg-[url('/images/hero-bg-sm.png')] md:bg-[url('/images/hero-bg.jpg')] bg-cover bg-center h-[65vh] md:w-1/2 md:h-[90vh]`}
+        className={`bg-[url('/images/hero-bg-sm.png')] md:bg-[url('/images/hero-bg.jpg')] bg-cover bg-center h-[55vh] sm:h-[60vh] md:w-1/2 md:h-[90vh]`}
       />
-      <div className="md:w-1/2 h-[30vh] md:h-auto md:flex items-center justify-center">
-        <div className="w-full py-10 px-4 z-10 animate-[fadeIn_1/2s_ease-in_1/2s] flex flex-col items-center">
-          {showFirst && <TypewriterEffect words={wordsOne} />}
-          {showSecond && <TypewriterEffect words={wordsTwo} />}
-          {showThird && <TypewriterEffect words={wordsThree} />}
+      <div className="md:w-1/2 h-[40vh] sm:h-[35vh] md:h-auto flex flex-col items-center justify-between py-5 sm:py-10 md:py-28">
+        <h1
+          style={{ transitionDuration: "700ms" }}
+          className={`text-bluewhite text-3xl text-center transition-all ease-out ${
+            isLoaded
+              ? "opacity-100 translate-x-0"
+              : "opacity-0 -translate-x-full"
+          }`}
+        >
+          WEB DEVELOPMENT
+        </h1>
+        <div className="h-[20vh] sm:h-[15vh] flex items-center justify-center">
+          <div className=" w-full  px-4 z-10 animate-[fadeIn_1/2s_ease-in_1/2s] flex flex-col items-center">
+            {showFirst && <TypewriterEffect words={wordsOne} />}
+            {showSecond && <TypewriterEffect words={wordsTwo} />}
+            {showThird && <TypewriterEffect words={wordsThree} />}
+          </div>
         </div>
+        <h1
+          style={{ transitionDuration: "500ms" }}
+          className={`text-bluewhite text-3xl text-center transition-all ease-out ${
+            isLoaded
+              ? "opacity-100 translate-x-0"
+              : "opacity-0 translate-x-full"
+          }`}
+        >
+          TRANSLATION
+        </h1>
       </div>
     </div>
   );

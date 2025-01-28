@@ -5,7 +5,7 @@ import { MdOutlineEmail } from "react-icons/md";
 
 export function Bio() {
   return (
-    <section className="bg-gradient-to-br from-bluedark to-bluewhite ">
+    <section className="bg-gradient-to-br from-bluedark to-bluewhite tracking-wider">
       <div className=" flex justify-center bg-bluepull w-full " id="bio">
         <h1 className="tracking-wide text-xl md:text-3xl font-bold text-white py-4 md:py-6 ">
           BIO

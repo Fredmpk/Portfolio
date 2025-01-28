@@ -4,7 +4,7 @@ import { Carousel } from "./projects-carousel";
 
 export function Projects() {
   return (
-    <section className="projects-container bg-bluebright">
+    <section className="projects-container bg-bluebright tracking-widest">
       <div
         className="flex justify-center bg-bluepull w-full p-[3vw]"
         id="projects"

@@ -28,9 +28,9 @@ export function Skills() {
   });
 
   return (
-    <section className="bg-bluebright pt-4 md:pt-6">
+    <section className="bg-bluebright pt-4 md:pt-6 tracking-widest">
       <div className="flex bg-bluebright  justify-center">
-        <h1 className="font-bold text-white tracking-wide text-xl md:text-3xl pb-4 md:pb-6">
+        <h1 className="font-bold text-white  text-xl md:text-3xl pb-4 md:pb-6">
           EXPERTISE
         </h1>
       </div>
@@ -172,10 +172,10 @@ export function Skills() {
         <div className="md:row-start-2 md:col-start-1 order-4 md:order-3">
           <Image
             src="/images/Github-pb.jpg"
-            alt="Frederik König hält seine Masterarbeit Übersetzungswissenschaften in die Kamera"
+            alt="Portrait Frederik König"
             width={1500}
             height={1500}
-            className="object-cover w-full h-full"
+            className="object-cover w-full h-full hidden md:block"
           />
         </div>
         <div

@@ -14,22 +14,23 @@ const cards = [
       "In September, I successfully completed an intensive training program at Devhaus Leipzig, where I pursued my goal of becoming a front-end developer. During this program, I gained a comprehensive understanding of front-end development fundamentals, including HTML, CSS, JavaScript, TypeScript, React, and Next.js. I also acquired valuable insights into backend technologies such as Node.js, Express, and SQL. While the course was challenging at times and truly pushed me to my limits, it was an incredibly rewarding experience that allowed me to grow both technically and personally. The program also covered essential design principles, focusing on UI/UX and Figma, and equipped me with practical knowledge of tools like Git, Docker, Prisma, and VS Code. Through hands-on team and solo projects that simulated real-world scenarios, I developed the skills and confidence needed to apply my new expertise in professional settings.",
   },
   {
-    title: "Meine Portfolio-Website",
+    title: "My Portfolio Page",
     image: "/images/portfolio.png",
     content:
-      "Wie ihr seht befindet sich diese Website noch im Aufbau, das ist nur die aktuelle Version und es wird noch viel passieren! Ich habe vor die Seite mehrsprachig zu gestalten, ein Kontaktformular und vielleicht ein Blog einzurichten, ich werde das Design bestimmt noch einige Male ändern und auch inhaltlich gibt es bestimmt immer etwas was ich doch denke schöner gestalten zu können. Also kommt wieder!",
+      "Welcome to my portfolio! I'm continuously working on improving and expanding my webpage, so feel free to check back anytime to see what's new. Future updates may include multilingual support, a contact form, or even a blog. The design might also evolve—how much flies in and out will depend on my creativity and mood. Stay tuned!",
   },
+
   {
-    title: "Meine erste App: WerIstSchuld?",
-    image: "/images/weristschuld.jpg",
-    content:
-      "Für mein nächstes Projekt möchte ich mich dem Thema Steuerbetrug und Sozialbetrug widmen. Ich plane, eine App zu entwickeln, die die offiziellen statistischen Daten zu diesen Themen aufbereitet und in Beziehung zueinander setzt. Mithilfe von anschaulichen Animationen und interaktiven Funktionen soll den Nutzerinnen und Nutzern ein Einblick in die finanziellen Auswirkungen und Handlungsmöglichkeiten gegeben werden. Dabei werde ich auch Beispielrechnungen zur möglichen Verwendung der durch Steuerbetrug entzogenen Mittel für soziale Zwecke einbinden.",
-  },
-  {
-    title: "Website für einen Fahrradmechaniker",
+    title: "Website for a Bike Manufacturer",
     image: "/images/journeyman.png",
     content:
-      "Dies ist mein erstes Projekt nach dem Bootcamp, ich gestalte die Website eines befreundeten Fahrradmechanikers. Für mich eine gute Gelegenheit das gelernte anzuwenden und mich auszuprobieren",
+      "This was my first project after completing the bootcamp—a website for a friend who manufactures custom cargobikes. While I created the design in Figma, it was tailored to my friend's wishes and vision for the site. I built the website with Next.js for a fast, modern experience. I used Sanity as the headless CMS to manage content seamlessly. It was a great opportunity to apply everything I've learned, experiment with new technologies, and gain hands-on experience in web development.",
+  },
+  {
+    title: "An idea for an app: WerIstSchuld?",
+    image: "/images/weristschuld.jpg",
+    content:
+      "For a future project, I want to focus on the topic of tax fraud and social fraud. My plan is to develop an app that processes and interconnects official statistical data on these issues. Using engaging animations and interactive features, the app will provide users with insights into the financial impacts and potential courses of action. Additionally, I intend to include example calculations to illustrate how the funds lost to tax fraud could be redirected for social purposes. Sadly, this is still only an idea",
   },
 ];
 export function Carousel({ interval = 5000 }) {
@@ -67,7 +68,7 @@ export function Carousel({ interval = 5000 }) {
 
   return (
     <div
-      className="cards-container-body flex justify-center items-center relative"
+      className="cards-container-body flex justify-center items-center relative p-4"
       {...handlers}
     >
       <div className="cards-container flex flex-col flex-wrap justify-center md:flex-row gap-[2vw] w-full">
@@ -92,7 +93,7 @@ export function Carousel({ interval = 5000 }) {
           </div>
         ))}
       </div>
-      <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
+      <div className="absolute bottom-2 left-0 right-0 flex justify-center space-x-2">
         {cards.map((_, index) => (
           <button
             key={index}
