@@ -39,9 +39,9 @@ export default function Hero() {
 "
     >
       <div
-        className={`bg-[url('/images/hero-bg-sm.png')] md:bg-[url('/images/hero-bg.jpg')] bg-cover bg-center h-[51vh] sm:h-[60vh] md:w-1/2 md:h-[90vh]`}
+        className={`bg-[url('/images/hero-bg-sm.png')] md:bg-[url('/images/hero-bg.jpg')] bg-cover bg-center h-[55vh] sm:h-[60vh] md:w-1/2 md:h-[90vh]`}
       />
-      <div className="md:w-1/2 h-[40vh] sm:h-[35vh] md:h-auto flex flex-col items-center justify-between py-5 sm:py-10 md:py-28">
+      <div className="md:w-1/2 h-[45vh] sm:h-[35vh] md:h-auto flex flex-col items-center justify-between pt-5 pb-16 sm:py-10 md:py-28">
         <h1
           style={{ transitionDuration: "700ms" }}
           className={`text-bluewhite text-3xl text-center transition-all ease-out ${
