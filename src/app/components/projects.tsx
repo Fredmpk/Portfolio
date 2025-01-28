@@ -4,12 +4,12 @@ import { Carousel } from "./projects-carousel";
 
 export function Projects() {
   return (
-    <section className="projects-container bg-[#343F4F]">
+    <section className="projects-container bg-bluebright">
       <div
-        className="title__projects flex justify-center bg-transgreen w-full p-[3vw]"
+        className="flex justify-center bg-bluepull w-full p-[3vw]"
         id="projects"
       >
-        <h1 className="tracking-wide text-xl md:text-3xl font-bold">
+        <h1 className="tracking-wide text-xl md:text-3xl text-white font-bold">
           PROJEKTE
         </h1>
       </div>

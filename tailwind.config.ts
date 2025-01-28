@@ -22,6 +22,11 @@ const config: Config = {
         footerdarkgreen: "#4D5F50",
         introorange: "#E4CC87",
         skillsorange: "#DEC39D",
+        bluepull: "#273254",
+        bluebright: "#475583",
+        bluedark: "#10273D",
+        bluewhite: "#89A3F6",
+        bluegrey: "#546088",
       },
       fontFamily: {
         sans: ["Tinos", "serif"],

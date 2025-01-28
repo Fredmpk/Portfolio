@@ -8,10 +8,10 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const cards = [
   {
-    title: "Mein Bootcamp im Devhaus",
+    title: "My Bootcamp @Devhaus",
     image: "/images/devhaus.png",
     content:
-      "Im September werde ich meine intensive Weiterbildung beim Devhaus Leipzig abschließen, mit dem Ziel, ein Front-End-Entwickler zu werden. Während dieses Programms beschäftige ich mich umfassend mit den Grundlagen der Front-End-Entwicklung, darunter HTML, CSS, JavaScript, TypeScript, React und Next.js. Ich gewinne zudem wertvolle Einblicke in Backend-Technologien wie Node.js, Express und SQL. Auch wenn es manchmal herausfordernd ist und mein Kopf raucht, macht es Spaß und ich sammle wertvolle Erfahrungen. Der Kurs umfasst auch wichtige Design-Prinzipien mit UI/UX und Figma, und ich erwerbe praktische Kenntnisse in Tools wie Git, Docker, Prisma und VS Code. Durch realitätsnahe Team- und Einzelprojekte bereite ich mich intensiv auf die Anwendung meiner neuen Fähigkeiten vor.",
+      "In September, I successfully completed an intensive training program at Devhaus Leipzig, where I pursued my goal of becoming a front-end developer. During this program, I gained a comprehensive understanding of front-end development fundamentals, including HTML, CSS, JavaScript, TypeScript, React, and Next.js. I also acquired valuable insights into backend technologies such as Node.js, Express, and SQL. While the course was challenging at times and truly pushed me to my limits, it was an incredibly rewarding experience that allowed me to grow both technically and personally. The program also covered essential design principles, focusing on UI/UX and Figma, and equipped me with practical knowledge of tools like Git, Docker, Prisma, and VS Code. Through hands-on team and solo projects that simulated real-world scenarios, I developed the skills and confidence needed to apply my new expertise in professional settings.",
   },
   {
     title: "Meine Portfolio-Website",
@@ -74,7 +74,7 @@ export function Carousel({ interval = 5000 }) {
         {cards.map((card, index) => (
           <div
             key={index}
-            className={`card bg-introorange rounded-lg p-[2vw] max-w-[90vw] md:max-w-[80vw] md:min-w-20 m-[1vw] flex flex-col gap-[2vw] transition-opacity duration-500 ${
+            className={`card bg-bluegrey text-white rounded-lg p-[2vw] max-w-[90vw] md:max-w-[80vw] md:min-w-20 m-[1vw] flex flex-col gap-[2vw] transition-opacity duration-500 ${
               index === currentIndex
                 ? "opacity-100"
                 : "opacity-0 absolute top-0 left-0"

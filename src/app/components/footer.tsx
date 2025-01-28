@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export function Footer() {
   return (
-    <footer className="flex flex-col sm:flex-row bg-footerdarkgreen align-center items-center justify-between py-[3vw] px-[2vw] text-white font-sm sm:font-base font-bold gap-[2vw] sm:gap-0">
+    <footer className="flex flex-col sm:flex-row bg-bluedark align-center items-center justify-between py-[3vw] px-[2vw] text-white font-sm sm:font-base font-bold gap-[2vw] sm:gap-0">
       <ul className="flex gap-[3vw]">
         <li>
           <a href="/impressum" className="hover:underline">

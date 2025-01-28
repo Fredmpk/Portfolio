@@ -28,10 +28,11 @@ export function Skills() {
   });
 
   return (
-    <section className="">
-      <div id="skills" className="absolute top-[11vw] md:top-[12vw]"></div>
-      <div className="flex bg-skillsorange p-[3vw] justify-center">
-        <h1 className="font-bold tracking-wide text-xl md:text-3xl">SKILLS</h1>
+    <section className="bg-bluebright pt-4 md:pt-6">
+      <div className="flex bg-bluebright  justify-center">
+        <h1 className="font-bold text-white tracking-wide text-xl md:text-3xl pb-4 md:pb-6">
+          EXPERTISE
+        </h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 w-full">
         <div
@@ -41,22 +42,26 @@ export function Skills() {
             opacity: isWebdevInView ? 1 : 0,
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
-          className={`py-[4vw] px-[5vw] md:row-start-1 md:col-start-1 md:col-span-2 bg-webbrightgreen order-1 }`}
+          className={`py-[4vw] px-[5vw] md:row-start-1 md:col-start-1 md:col-span-2 bg-bluepull order-1 }`}
           id="webdev"
         >
-          <h2 className="pl-[3vw] font-bold tracking-wide text-lg md:text-xl">
-            WEBENTWICKLUNG
+          <h2 className="pl-[3vw] font-bold tracking-wide text-white text-lg md:text-xl">
+            WEB DEVELOPMENT
           </h2>
-          <p className="py-[6vw] text-base md:text-lg lg:text-xl">
-            Momentan befinde ich mich mitten in meiner Ausbildung zum
-            Frontend-Entwickler bei Devhaus und bin begeistert von der Welt der
-            Websites und Apps. Neben meiner Ausbildung arbeite ich bereits an
-            eigenen Projekten, um mein Wissen zu vertiefen und praktische
-            Erfahrungen zu sammeln. Meine Neugier kennt keine Grenzen, und ich
-            bin ständig auf der Suche nach neuen Technologien und
-            Lernmöglichkeiten, um meine Fähigkeiten weiter zu verbessern.
+          <p className="py-[6vw] text-base md:text-lg lg:text-xl text-white">
+            As a recent graduate of an intensive frontend development bootcamp,
+            I&apos;m fascinated by the infinite possibilities in th world of
+            coding. My current focus lies in building modern web applications
+            with Next.js, while continuously expanding my technical toolkit.
+            Beyond frontend development, I&apos;ve gained valuable insights into
+            backend technologies, working with databases and headless CMS
+            solutions. I&apos;m passionate about creating intuitive user
+            experiences and constantly enhance my skills through hands-on
+            project work, developing both websites and applications. My
+            curiosity drives me to stay current with emerging technologies and
+            best practices in the ever-evolving development landscape.
           </p>
-          <div className="grid grid-cols-4 lg:grid-cols-7 gap-[3vw] mt-4 text-base md:text-lg">
+          <div className="grid grid-cols-4 lg:grid-cols-7 gap-[3vw] mt-4 text-base md:text-lg text-white">
             <div className="flex flex-col items-center">
               <FontAwesomeIcon
                 icon={faHtml5}
@@ -166,7 +171,7 @@ export function Skills() {
         </div>
         <div className="md:row-start-2 md:col-start-1 order-4 md:order-3">
           <Image
-            src="/images/uebersetzung.png"
+            src="/images/Github-pb.jpg"
             alt="Frederik König hält seine Masterarbeit Übersetzungswissenschaften in die Kamera"
             width={1500}
             height={1500}
@@ -180,34 +185,34 @@ export function Skills() {
             opacity: isTranslationInView ? 1 : 0,
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
-          className="py-[4vw] px-[5vw] md:row-start-2 md:col-start-2 md:col-span-2 bg-transgreen order-3 md:order-4"
+          className="py-[4vw] px-[5vw] md:row-start-2 md:col-start-2 md:col-span-2 bg-bluedark order-3 md:order-4"
           id="translation"
         >
-          <h2 className="p-[3vw] font-bold tracking-wide text-lg md:text-xl">
-            ÜBERSETZUNGEN
+          <h2 className="p-[3vw] font-bold tracking-wide text-lg md:text-2xl text-white">
+            TRANSLATION
           </h2>
           <div className="flex flex-col justify-center gap-[3vw]">
-            <p className="text-base md:text-lg lg:text-xl">
-              Ich spezialisiere mich auf präzise Übersetzungen zwischen Deutsch,
-              Französisch und Englisch. Mit meinem erfolgreich abgeschlossenen
-              Masterstudium in Translatologie bringe ich fundiertes Fachwissen
-              und ein tiefes Verständnis für sprachliche Feinheiten mit.
-              Zusätzlich habe ich wertvolle Erfahrungen als freier Übersetzer
-              gesammelt und im Ausland gelebt, unter anderem in Togo und Niger.
-              Diese internationalen Erfahrungen und meine zahlreichen Reisen
-              haben mir nicht nur sprachliche, sondern auch bedeutende
-              kulturelle Kompetenzen vermittelt.
+            <p className="text-base md:text-lg text-white lg:text-xl tracking-widest">
+              I specialize in accurate and nuanced translations between German,
+              French, and English. With a Master&apos;s degree in Translatology,
+              I bring a deep understanding of linguistic subtleties and expert
+              knowledge in the field. As a freelance translator, I have honed my
+              skills through diverse projects and real-world experience. Having
+              lived abroad in countries such as Togo and Niger, as well as
+              traveling extensively, I&apos;ve gained not only linguistic
+              expertise but also valuable cultural insights that enhance the
+              quality and authenticity of my translations.
             </p>
-            <div className="grid grid-cols-5 gap-[3vw] mt-4 text-base">
-              <div className="flex flex-col items-center">
+            <div className="flex flex-row justify-between mx-28  mt-4 text-base">
+              {/* <div className="flex flex-col items-center">
                 <Image
                   src="/svg/trados.svg"
                   alt="Trados Icon"
                   width={250}
                   height={250}
-                  className="h-12 w-12 mb-2 rounded-full"
+                  className="lg:h-24 lg:w-24 h-12 w-12 mb-2 rounded-full p-1 bg-white"
                 />
-              </div>
+              </div> */}
               <div className="flex flex-col items-center">
                 <Image
                   src="/svg/france.svg"

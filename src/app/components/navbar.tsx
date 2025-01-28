@@ -5,10 +5,10 @@ import Link from "next/link";
 export function Navbar() {
   return (
     <div className="fixed w-full bg-white opacity-90 shadow-md z-50">
-      <nav className="flex items-center justify-between font-primary font-bold text-lg md:text-2xl tracking-wide m-[4vw] md:m-[3vw] h-[3vw] md:h-[1vw] ">
+      <nav className="flex items-center justify-between font-primary font-bold text-lg md:text-2xl tracking-wide mx-4 md:my-4 h-12 md:h-16">
         <div className="flex items-center">
           <svg
-            className="w-[5vw] h-[5vw] md:w-[4vw] md:h-[4vw] mr-[2vw]"
+            className="w-10 h-10 md:w-16 md:h-16 mr-4"
             viewBox="0 0 100 100"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

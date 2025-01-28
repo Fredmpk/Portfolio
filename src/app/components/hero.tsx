@@ -1,34 +1,27 @@
 "use client";
-
-import { useState, useEffect } from "react";
-import { FaAngleDown, FaAngleUp } from "react-icons/fa";
-import Image from "next/image";
+import { useEffect, useState } from "react";
 import { TypewriterEffect } from "./ui/typewriter-effect";
+import { wordsOne, wordsThree, wordsTwo } from "../lib/utils/words";
+
 export default function Hero() {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
-  const [showWebDevPhoto, setShowWebDevPhoto] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
   const [showFirst, setShowFirst] = useState(false);
   const [showSecond, setShowSecond] = useState(false);
   const [showThird, setShowThird] = useState(false);
 
   useEffect(() => {
-    // Start first typewriter after 2 seconds
     const firstTimer = setTimeout(() => {
       setShowFirst(true);
-    }, 2000);
+    }, 200);
 
-    // Start second typewriter after 6 seconds
     const secondTimer = setTimeout(() => {
       setShowSecond(true);
-    }, 6000);
+    }, 3800);
 
-    // Start third typewriter after 10 seconds
     const thirdTimer = setTimeout(() => {
       setShowThird(true);
-    }, 12000);
+    }, 10000);
 
-    // Cleanup timers
     return () => {
       clearTimeout(firstTimer);
       clearTimeout(secondTimer);
@@ -40,196 +33,18 @@ export default function Hero() {
     setIsLoaded(true);
   }, []);
 
-  function handleHi() {
-    setIsOpen(!isOpen);
-  }
-  function toggleWebDevPhoto() {
-    setShowWebDevPhoto(!showWebDevPhoto);
-  }
-
-  const words = [
-    {
-      text: "Hi,",
-      className: "text-md lg:text-xl text-white italic font-normal ",
-    },
-
-    {
-      text: "i'm",
-
-      className: "text-md lg:text-xl text-white italic font-normal",
-    },
-    {
-      text: "Fred,",
-
-      className: "text-md lg:text-xl text-white italic font-normal",
-    },
-    {
-      text: "an",
-
-      className: "text-md lg:text-xl text-white italic font-normal",
-    },
-    {
-      text: "aspiring",
-      className: "text-md lg:text-xl text-white italic font-normal",
-    },
-    {
-      text: "frontend",
-      className: "text-md lg:text-xl text-white italic font-normal",
-    },
-    {
-      text: " developer.",
-      className: "text-md lg:text-xl text-white italic font-normal",
-    },
-  ];
-
-  const wordstwo = [
-    {
-      text: "I ",
-      className: "text-md lg:text-xl text-white italic font-normal",
-    },
-    {
-      text: " studied ",
-      className: "text-md lg:text-xl text-white italic font-normal",
-    },
-    {
-      text: " translation",
-      className: "text-md lg:text-xl text-white italic font-normal",
-    },
-    {
-      text: " and",
-      className: "text-md lg:text-xl text-white italic font-normal",
-    },
-    {
-      text: "then ",
-      className: "text-md lg:text-xl text-white italic font-normal",
-    },
-    {
-      text: " found ",
-      className: "text-md lg:text-xl text-white italic font-normal",
-    },
-    {
-      text: " my ",
-      className: "text-md lg:text-xl text-white italic font-normal",
-    },
-    {
-      text: " passion ",
-      className: "text-md lg:text-xl text-white italic font-normal",
-    },
-    {
-      text: " in",
-      className: "text-md lg:text-xl text-white italic font-normal",
-    },
-    {
-      text: " coding.",
-      className: "text-md lg:text-xl text-white italic font-normal",
-    },
-  ];
-  const wordsthree = [
-    {
-      text: "Now",
-      className: "text-md lg:text-xl text-white italic font-normal",
-    },
-    {
-      text: "I'm ",
-      className: "text-md lg:text-xl text-white italic font-normal",
-    },
-    {
-      text: "looking",
-      className: "text-md lg:text-xl text-white italic font-normal",
-    },
-    {
-      text: "for",
-      className: "text-md lg:text-xl text-white italic font-normal",
-    },
-    {
-      text: "a",
-      className: "text-md lg:text-xl text-white italic font-normal",
-    },
-    {
-      text: "cool",
-      className: "text-md lg:text-xl text-white italic font-normal",
-    },
-    {
-      text: "job",
-      className: "text-md lg:text-xl text-white italic font-normal",
-    },
-    {
-      text: "to",
-      className: "text-md lg:text-xl text-white italic font-normal",
-    },
-    {
-      text: "combine",
-      className: "text-md lg:text-xl text-white italic font-normal",
-    },
-    {
-      text: "both.",
-      className: "text-md lg:text-xl text-white italic font-normal",
-    },
-  ];
-
   return (
-    <div>
-      <div className="h-[15vh] w-full bg-backgroundwhite md:hidden"></div>
-
-      {/* <section className={`bg-cover bg-center h-[88vw] ${showWebDevPhoto ? "bg-[url('/images/hermirror.png')]" : "bg-[url('/images/hero.png')]"}`}></section> */}
-      <section
-        className={`bg-cover bg-center h-[88vw] ${
-          showWebDevPhoto
-            ? "bg-[url('/images/heromirror.png')]"
-            : "bg-[url('/images/hero.png')]"
-        }`}
-      >
-        <div className="grid grid-rows-[8vw_4.5vw_2vw_4vw_1vw_0vw_4.5vw] grid-cols-[2vw_38vw_29vw_3vw_28vw] gap-0 text-[clamp(1rem,0.5843rem+1.7738vw,2.5rem)] lowercase md:uppercase">
-          <a
-            href="#webdev"
-            style={{ transitionDuration: "1000ms" }}
-            className={` bg-handyellow rounded-[50%] flex justify-center items-center px-[10vw] py-[5vw] xs:p-[4vw] sm:p-[3vw] row-start-3 md:row-start-4 row-span-2 col-start-2 transition-all ease-out ${
-              isLoaded
-                ? "opacity-100 translate-x-0"
-                : "opacity-0 -translate-x-full"
-            }`}
-            onClick={toggleWebDevPhoto}
-            onMouseEnter={() => setShowWebDevPhoto(true)}
-            onMouseLeave={() => setShowWebDevPhoto(false)}
-          >
-            {" "}
-            WEB DEVELOPMENT{" "}
-          </a>
-
-          <a
-            href="#translation"
-            style={{ transitionDuration: "1500ms" }}
-            className={`bg-transgreen w-30 rounded-[50%] flex justify-center items-center p-[5vw] xs:p-[4vw] sm:p-[3vw] row-start-4 md:row-start-5 row-span-3 col-start-4 col-span-2 transition-all ease-out ${
-              isLoaded
-                ? "opacity-100 translate-x-0"
-                : "opacity-0 translate-x-full"
-            }`}
-          >
-            TRANSLATION
-          </a>
-        </div>
-        <div
-          style={{
-            transitionDuration: "10000ms",
-          }}
-          className={`bg-[url('/images/screen-sm.png')] sm:bg-[url('/images/screen.png')] relative h-3/4 sm:h-[80vh]  w-full bg-center bg-no-repeat bg-[length:150%_85%] xs:bg-[length:150%_75%] md:bg-[length:140%_80%] ${
-            isLoaded ? "opacity-95" : "opacity-0"
-          }`}
-        >
-          <div className="absolute top-[23%] xs:top-[30%] md:top-[35%] sm:left-[17%] left-[19%] xs:left-[18%] w-[70%]">
-            <div className="relative pr-3 xs:p-8 z-10 animate-[fadeIn_2s_ease-in_3s]">
-              {showFirst && <TypewriterEffect words={words} />}
-              {showSecond && <TypewriterEffect words={wordstwo} />}
-              {showThird && <TypewriterEffect words={wordsthree} />}
-            </div>
-          </div>
-        </div>
-      </section>
+    <div className="bg-bluepull mt-12 md:mt-24 flex flex-col md:flex-row">
       <div
-        className={`${
-          isOpen ? "block" : "hidden"
-        } xs:hidden bg-green h-[34vh] xxs:h-[17vh]`}
-      ></div>
+        className={`bg-[url('/images/hero-bg-sm.png')] md:bg-[url('/images/hero-bg.jpg')] bg-cover bg-center h-[65vh] md:w-1/2 md:h-[90vh]`}
+      />
+      <div className="md:w-1/2 h-[30vh] md:h-auto md:flex items-center justify-center">
+        <div className="w-full py-10 px-4 z-10 animate-[fadeIn_1/2s_ease-in_1/2s] flex flex-col items-center">
+          {showFirst && <TypewriterEffect words={wordsOne} />}
+          {showSecond && <TypewriterEffect words={wordsTwo} />}
+          {showThird && <TypewriterEffect words={wordsThree} />}
+        </div>
+      </div>
     </div>
   );
 }
