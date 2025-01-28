@@ -203,7 +203,7 @@ export function Skills() {
               expertise but also valuable cultural insights that enhance the
               quality and authenticity of my translations.
             </p>
-            <div className="flex flex-row justify-between mx-28  mt-4 text-base">
+            <div className="flex flex-row justify-between mx-10 sm:mx-28  mt-4 text-base">
               {/* <div className="flex flex-col items-center">
                 <Image
                   src="/svg/trados.svg"

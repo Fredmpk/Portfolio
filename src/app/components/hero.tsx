@@ -16,11 +16,11 @@ export default function Hero() {
 
     const secondTimer = setTimeout(() => {
       setShowSecond(true);
-    }, 3800);
+    }, 1800);
 
     const thirdTimer = setTimeout(() => {
       setShowThird(true);
-    }, 10000);
+    }, 5000);
 
     return () => {
       clearTimeout(firstTimer);
@@ -54,7 +54,7 @@ export default function Hero() {
         </h1>
         <div className="h-[20vh] sm:h-[15vh] flex items-center justify-center">
           <div className=" w-full  px-4 z-10 animate-[fadeIn_1/2s_ease-in_1/2s] flex flex-col items-center">
-            {showFirst && <TypewriterEffect words={wordsOne} />}
+            <TypewriterEffect words={wordsOne} />
             {showSecond && <TypewriterEffect words={wordsTwo} />}
             {showThird && <TypewriterEffect words={wordsThree} />}
           </div>
