@@ -10,7 +10,7 @@ export function Projects() {
         id="projects"
       >
         <h1 className="tracking-wide text-xl md:text-3xl text-white font-bold">
-          PROJEKTE
+          PROJECTS
         </h1>
       </div>
       <Carousel />
