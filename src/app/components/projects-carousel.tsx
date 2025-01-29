@@ -33,7 +33,7 @@ const cards = [
       "For a future project, I want to focus on the topic of tax fraud and social fraud. My plan is to develop an app that processes and interconnects official statistical data on these issues. Using engaging animations and interactive features, the app will provide users with insights into the financial impacts and potential courses of action. Additionally, I intend to include example calculations to illustrate how the funds lost to tax fraud could be redirected for social purposes. Sadly, this is still only an idea",
   },
 ];
-export function Carousel({ interval = 5000 }) {
+export function Carousel({ interval = 30000 }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {

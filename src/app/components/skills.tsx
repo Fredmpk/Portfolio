@@ -101,6 +101,27 @@ export function Skills() {
               <span>React</span>
             </div>
             <div className="flex flex-col items-center">
+              <Image
+                src="/svg/nextjs.svg"
+                alt="Nextjs Icon"
+                width={150}
+                height={150}
+                className="h-12 w-12 mb-2"
+              />
+              <span>Nextjs</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <Image
+                src="/svg/sanity.svg"
+                alt="sanity Icon"
+                width={150}
+                height={150}
+                className="h-12 w-12 mb-2"
+              />
+              <span>Sanity</span>
+            </div>
+
+            <div className="flex flex-col items-center">
               <FontAwesomeIcon
                 icon={faNodeJs}
                 className="h-12 w-12 text-green-500 mb-2"

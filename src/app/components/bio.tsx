@@ -24,10 +24,10 @@ export function Bio() {
           </div>
           <div className="md:w-2/3 md:pl-12">
             <h1 className="text-4xl font-bold mb-2">Frederik König</h1>
-            <p className="text-xl mb-4 flex items-center">
+            <p className="text-2xl mb-4 flex items-center">
               <FaMapMarkerAlt className="mr-2" /> Leipzig, Germany
             </p>
-            <p className="text-lg mb-4">Web Developer | Translator </p>
+            <p className="text-2xl mb-4">Web Developer | Translator </p>
             <div className="flex space-x-4">
               <Link
                 href="https://github.com/Fredmpk"
@@ -52,54 +52,58 @@ export function Bio() {
             </div>
           </div>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="bg-transgreen bg-opacity-20 rounded-lg p-6 backdrop-filter backdrop-blur-lg">
             <h2 className="text-2xl font-semibold mb-4">
               Professional Experiences
             </h2>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-xl">
               <li>🌐 Freelance Translator since 2022</li>
-              <li>(French - German / English-German)</li>
+              <li className="ml-7 text-lg italic">
+                French - German / English-German
+              </li>
               <li>🛠️ Freelance Craftsman since 2016</li>
             </ul>
           </div>
+
           <div className="bg-green bg-opacity-10 rounded-lg p-6 backdrop-filter backdrop-blur-lg">
             <h2 className="text-2xl font-semibold mb-4">Education</h2>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-xl">
               <li>🚀 Frontend Developer - Devhaus Leipzig | 2024</li>
               <li>
                 🎓 M.A. Translatology - Universität Leipzig | 2018-2022
-                <p className="text-sm mt-1">
+                <p className="text-lg mt-1 ml-7 italic">
                   Fields: Law, Medicine, Business, Tourism and Linguistics
                 </p>
               </li>
-
               <li>
                 🎓 B.A. African Studies - Universität Leipzig | 2013-2018
-                <p className="text-sm mt-1">
+                <p className="text-lg mt-1 ml-7 italic">
                   Fields: Haussa, Language, Culture, Media, Social Structures,
                   Politics and Economy
                 </p>
               </li>
             </ul>
           </div>
+
           <div className="bg-footerdarkgreen bg-opacity-10 rounded-lg p-6 backdrop-filter backdrop-blur-lg md:col-span-2">
             <h2 className="text-2xl font-semibold mb-4">
               International Experiences
             </h2>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-xl">
               <li>
-                <span role="img" aria-label="Niger Flagge">
+                <span role="img" aria-label="Niger Flag">
                   🇳🇪
-                </span>
+                </span>{" "}
                 Semester Abroad - Université Abdou Moumouni, Niger | 2015/2016
-                <p className="text-sm mt-1">Sociology und Haussa course</p>
+                <p className="text-lg mt-1 ml-7 italic">
+                  Sociology and Haussa course
+                </p>
               </li>
               <li>
-                <span role="img" aria-label="Togo Flagge">
+                <span role="img" aria-label="Togo Flag">
                   🇹🇬
-                </span>
+                </span>{" "}
                 Volunteer work - Collège Protestant, Kpalimé, Togo | 2012/2013
               </li>
             </ul>
