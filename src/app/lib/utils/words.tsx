@@ -5,7 +5,7 @@ export const wordsOne = [
   },
 
   {
-    text: "i'm",
+    text: "I'm",
 
     className: "text-lg lg:text-2xl text-white italic font-normal",
   },
@@ -28,50 +28,50 @@ export const wordsOne = [
     className: "text-lg lg:text-2xl text-white italic font-normal",
   },
   {
-    text: " developer.",
+    text: "developer.",
     className: "text-lg lg:text-2xl text-white italic font-normal",
   },
 ];
 
 export const wordsTwo = [
   {
-    text: "I ",
+    text: "I",
     className: "text-lg lg:text-2xl text-white italic font-normal",
   },
   {
-    text: " studied ",
+    text: "studied",
     className: "text-lg lg:text-2xl text-white italic font-normal",
   },
   {
-    text: " translation",
+    text: "translation",
     className: "text-lg lg:text-2xl text-white italic font-normal",
   },
   {
-    text: " and",
+    text: "and",
     className: "text-lg lg:text-2xl text-white italic font-normal",
   },
   {
-    text: "then ",
+    text: "then",
     className: "text-lg lg:text-2xl text-white italic font-normal",
   },
   {
-    text: " found ",
+    text: "found",
     className: "text-lg lg:text-2xl text-white italic font-normal",
   },
   {
-    text: " my ",
+    text: "my",
     className: "text-lg lg:text-2xl text-white italic font-normal",
   },
   {
-    text: " passion ",
+    text: "passion",
     className: "text-lg lg:text-2xl text-white italic font-normal",
   },
   {
-    text: " in",
+    text: "for",
     className: "text-lg lg:text-2xl text-white italic font-normal",
   },
   {
-    text: " coding.",
+    text: "coding.",
     className: "text-lg lg:text-2xl text-white italic font-normal",
   },
 ];
@@ -81,7 +81,7 @@ export const wordsThree = [
     className: "text-lg lg:text-2xl text-white italic font-normal",
   },
   {
-    text: "I'm ",
+    text: "I'm",
     className: "text-lg lg:text-2xl text-white italic font-normal",
   },
   {
@@ -97,7 +97,7 @@ export const wordsThree = [
     className: "text-lg lg:text-2xl text-white italic font-normal",
   },
   {
-    text: "cool",
+    text: "fulfilling",
     className: "text-lg lg:text-2xl text-white italic font-normal",
   },
   {

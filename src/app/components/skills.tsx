@@ -31,7 +31,7 @@ export function Skills() {
     <section className="bg-bluebright pt-4 md:pt-6 tracking-widest">
       <div className="flex bg-bluebright  justify-center">
         <h1 className="font-bold text-white  text-xl md:text-3xl pb-4 md:pb-6">
-          EXPERTISE
+          SKILLS
         </h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 w-full">
@@ -49,8 +49,14 @@ export function Skills() {
             WEB DEVELOPMENT
           </h2>
           <p className="py-[6vw] text-base md:text-lg lg:text-xl text-white">
-            As a recent graduate of an intensive frontend development bootcamp,
-            I&apos;m fascinated by the infinite possibilities in th world of
+            As a recent graduate of an intensive frontend development bootcamp{" "}
+            <a
+              href="https://startsteps.org/en/partner/devhaus-leipzig"
+              className="hover:underline"
+            >
+              @DEVHAUS Leipzig
+            </a>
+            , I&apos;m fascinated by the infinite possibilities in the world of
             coding. My current focus lies in building modern web applications
             with Next.js, while continuously expanding my technical toolkit.
             Beyond frontend development, I&apos;ve gained valuable insights into
@@ -62,123 +68,192 @@ export function Skills() {
             best practices in the ever-evolving development landscape.
           </p>
           <div className="grid grid-cols-4 lg:grid-cols-7 gap-[3vw] mt-4 text-base md:text-lg text-white">
-            <div className="flex flex-col items-center">
+            <a
+              href="https://html.spec.whatwg.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center p-2 hover:font-bold"
+            >
               <FontAwesomeIcon
                 icon={faHtml5}
-                className="h-12 w-12 text-orange-500 mb-2"
+                className="h-12 w-12 hover:h-14 hover:w-14 text-orange-500 mb-2"
               />
               <span>HTML</span>
-            </div>
-            <div className="flex flex-col items-center">
+            </a>
+
+            <a
+              href="https://www.w3.org/Style/CSS/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center p-2 hover:font-bold"
+            >
               <FontAwesomeIcon
                 icon={faCss3Alt}
-                className="h-12 w-12 text-blue-500 mb-2"
+                className="h-12 w-12 hover:h-14 hover:w-14  text-blue-500 mb-2"
               />
               <span>CSS</span>
-            </div>
-            <div className="flex flex-col items-center">
+            </a>
+
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center p-2 hover:font-bold"
+            >
               <FontAwesomeIcon
                 icon={faJsSquare}
-                className="h-12 w-12 text-yellow-500 mb-2"
+                className="h-12 w-12 hover:h-14 hover:w-14  text-yellow-500 mb-2"
               />
               <span className="mx-1">JavaScript</span>
-            </div>
-            <div className="flex flex-col items-center">
+            </a>
+
+            <a
+              href="https://www.typescriptlang.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center p-2 hover:font-bold"
+            >
               <Image
                 src="/svg/ts.svg"
-                alt="Trados Icon"
+                alt="TypeScript Icon"
                 width={150}
                 height={150}
-                className="h-12 w-12 mb-2"
+                className="h-12 w-12 hover:h-14 hover:w-14  mb-2"
               />
-              <span className="">TypeScript</span>
-            </div>
-            <div className="flex flex-col items-center">
+              <span>TypeScript</span>
+            </a>
+
+            <a
+              href="https://react.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center p-2 hover:font-bold"
+            >
               <FontAwesomeIcon
                 icon={faReact}
-                className="h-12 w-12 text-blue-400 mb-2"
+                className="h-12 w-12 hover:h-14 hover:w-14  text-blue-400 mb-2"
               />
               <span>React</span>
-            </div>
-            <div className="flex flex-col items-center">
+            </a>
+
+            <a
+              href="https://nextjs.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center p-2 hover:font-bold"
+            >
               <Image
                 src="/svg/nextjs.svg"
-                alt="Nextjs Icon"
+                alt="Next.js Icon"
                 width={150}
                 height={150}
-                className="h-12 w-12 mb-2"
+                className="h-12 w-12 hover:h-14 hover:w-14  mb-2"
               />
-              <span>Nextjs</span>
-            </div>
-            <div className="flex flex-col items-center">
+              <span>Next.js</span>
+            </a>
+
+            <a
+              href="https://www.sanity.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center p-2 hover:font-bold"
+            >
               <Image
                 src="/svg/sanity.svg"
-                alt="sanity Icon"
+                alt="Sanity Icon"
                 width={150}
                 height={150}
-                className="h-12 w-12 mb-2"
+                className="h-12 w-12 hover:h-14 hover:w-14  mb-2"
               />
               <span>Sanity</span>
-            </div>
+            </a>
 
-            <div className="flex flex-col items-center">
-              <FontAwesomeIcon
-                icon={faNodeJs}
-                className="h-12 w-12 text-green-500 mb-2"
-              />
-              <span>Node.js</span>
-            </div>
-            <div className="flex flex-col items-center">
+            <a
+              href="https://en.wikipedia.org/wiki/SQL"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center p-2 hover:font-bold"
+            >
               <Image
                 src="/svg/sql.svg"
-                alt="Trados Icon"
+                alt="SQL Icon"
                 width={150}
                 height={150}
-                className="h-12 w-12 mb-2"
+                className="h-12 w-12 hover:h-14 hover:w-14  mb-2"
               />
               <span>SQL</span>
-            </div>
-            <div className="flex flex-col items-center">
+            </a>
+
+            <a
+              href="https://code.visualstudio.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center p-2 hover:font-bold"
+            >
               <Image
                 src="/svg/vscode.svg"
-                alt="Trados Icon"
+                alt="VS Code Icon"
                 width={150}
                 height={150}
-                className="h-12 w-12 mb-2"
+                className="h-12 w-12 hover:h-14 hover:w-14  mb-2"
               />
               <span>VS Code</span>
-            </div>
-            <div className="flex flex-col items-center">
+            </a>
+
+            <a
+              href="https://git-scm.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center p-2 hover:font-bold"
+            >
               <FontAwesomeIcon
                 icon={faGit}
-                className="h-12 w-12 text-orange-600 mb-2"
+                className="h-12 w-12 hover:h-14 hover:w-14  text-orange-600 mb-2"
               />
               <span>Git</span>
-            </div>
-            <div className="flex flex-col items-center">
+            </a>
+
+            <a
+              href="https://www.docker.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center p-2 hover:font-bold"
+            >
               <FontAwesomeIcon
                 icon={faDocker}
-                className="h-12 w-12 text-blue-700 mb-2"
+                className="h-12 w-12 hover:h-14 hover:w-14  text-blue-700 mb-2"
               />
               <span>Docker</span>
-            </div>
-            <div className="flex flex-col items-center">
+            </a>
+
+            <a
+              href="https://www.prisma.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center p-2 hover:font-bold"
+            >
               <Image
                 src="/svg/prisma.svg"
-                alt="Trados Icon"
+                alt="Prisma Icon"
                 width={150}
                 height={150}
-                className="h-12 w-12 mb-2"
+                className="h-12 w-12 hover:h-14 hover:w-14  mb-2"
               />
               <span>Prisma</span>
-            </div>
-            <div className="flex flex-col items-center">
+            </a>
+
+            <a
+              href="https://www.figma.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center p-2 hover:font-bold"
+            >
               <FontAwesomeIcon
                 icon={faFigma}
-                className="h-12 w-12 text-purple-500 mb-2"
+                className="h-12 w-12 hover:h-14 hover:w-14  text-purple-500 mb-2"
               />
               <span>Figma</span>
-            </div>
+            </a>
           </div>
         </div>
         <div className="md:row-start-1 md:col-start-3 order-2">
@@ -214,15 +289,17 @@ export function Skills() {
           </h2>
           <div className="flex flex-col justify-center gap-[3vw]">
             <p className="text-base md:text-lg text-white lg:text-xl tracking-widest">
-              I specialize in accurate and nuanced translations between German,
-              French, and English. With a Master&apos;s degree in Translatology,
-              I bring a deep understanding of linguistic subtleties and expert
-              knowledge in the field. As a freelance translator, I have honed my
-              skills through diverse projects and real-world experience. Having
-              lived abroad in countries such as Togo and Niger, as well as
-              traveling extensively, I&apos;ve gained not only linguistic
-              expertise but also valuable cultural insights that enhance the
-              quality and authenticity of my translations.
+              As a translator with a Master&apos;s degree in Translatology, I
+              specialize in precise and culturally nuanced translations between
+              German, French, and English. My expertise has been shaped through
+              extensive freelance work across diverse projects, complemented by
+              immersive experiences living in West African countries like Togo
+              and Niger. This combination of academic foundation, professional
+              practice, and cultural immersion enables me to deliver
+              translations that are not only linguistically accurate but also
+              culturally authentic. I bring particular attention to capturing
+              subtle meanings and contextual nuances that are essential for
+              effective cross-cultural communication.
             </p>
             <div className="flex flex-row justify-between mx-10 sm:mx-28  mt-4 text-base">
               {/* <div className="flex flex-col items-center">

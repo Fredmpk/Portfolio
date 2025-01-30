@@ -42,7 +42,7 @@ export function Navbar() {
           </li>
 
           <li>
-            <Link href="/#projects">projekte</Link>
+            <Link href="/#projects">projects</Link>
           </li>
           {/* <li>
             <a href="#">kontakt</a>
