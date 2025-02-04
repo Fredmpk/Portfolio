@@ -26,12 +26,12 @@ const cards = [
     content:
       "This was my first project after completing the bootcamp—a website for a friend who manufactures custom cargobikes. While I created the design in Figma, it was tailored to my friend's wishes and vision for the site. I built the website with Next.js for a fast, modern experience. I used Sanity as the headless CMS to manage content seamlessly. It was a great opportunity to apply everything I've learned, experiment with new technologies, and gain hands-on experience in web development.",
   },
-  {
-    title: "An idea for an app: WerIstSchuld?",
-    image: "/images/weristschuld.jpg",
-    content:
-      "For a future project, I want to focus on the topic of tax fraud and social fraud. My plan is to develop an app that processes and interconnects official statistical data on these issues. Using engaging animations and interactive features, the app will provide users with insights into the financial impacts and potential courses of action. Additionally, I intend to include example calculations to illustrate how the funds lost to tax fraud could be redirected for social purposes. Sadly, this is still only an idea",
-  },
+  // {
+  //   title: "An idea for an app: WerIstSchuld?",
+  //   image: "/images/weristschuld.jpg",
+  //   content:
+  //     "For a future project, I want to focus on the topic of tax fraud and social fraud. My plan is to develop an app that processes and interconnects official statistical data on these issues. Using engaging animations and interactive features, the app will provide users with insights into the financial impacts and potential courses of action. Additionally, I intend to include example calculations to illustrate how the funds lost to tax fraud could be redirected for social purposes. Sadly, this is still only an idea",
+  // },
 ];
 export function Carousel({ interval = 30000 }) {
   const [currentIndex, setCurrentIndex] = useState(0);
