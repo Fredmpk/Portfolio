@@ -25,7 +25,7 @@ export default function LocaleSwitcherSelect({
       setUserLocale(locale);
       setTimeout(() => {
         window.location.reload();
-      }, 50);
+      }, 100);
     });
   }
 
