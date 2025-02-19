@@ -1,14 +1,16 @@
 "use client";
 import { useEffect, useState } from "react";
 import { TypewriterEffect } from "./ui/typewriter-effect";
-import { wordsOne, wordsThree, wordsTwo } from "../lib/utils/words";
+import { useTranslations } from "next-intl";
+import useTypewriterWords from "../lib/utils/words";
 
 export default function Hero() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [showFirst, setShowFirst] = useState(false);
   const [showSecond, setShowSecond] = useState(false);
   const [showThird, setShowThird] = useState(false);
-
+  const t = useTranslations("Hero");
+  const { wordsOne, wordsTwo, wordsThree } = useTypewriterWords();
   useEffect(() => {
     const firstTimer = setTimeout(() => {
       setShowFirst(true);
@@ -50,7 +52,7 @@ export default function Hero() {
               : "opacity-0 -translate-x-full"
           }`}
         >
-          WEB DEVELOPMENT
+          {t("WebDev")}
         </h1>
         <div className="h-[20vh] sm:h-[15vh] flex items-center justify-center">
           <div className=" w-full  px-4 z-10 animate-[fadeIn_1/2s_ease-in_1/2s] flex flex-col items-center">
@@ -67,7 +69,7 @@ export default function Hero() {
               : "opacity-0 translate-x-full"
           }`}
         >
-          TRANSLATION
+          {t("Transl")}
         </h1>
       </div>
     </div>

@@ -14,6 +14,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { useRef } from "react";
 import { useInView } from "motion/react";
+import { useTranslations } from "next-intl";
 
 export function Skills() {
   const webdevRef = useRef(null);
@@ -26,12 +27,13 @@ export function Skills() {
     once: false,
     margin: "0px 0px -300px 0px",
   });
+  const t = useTranslations("Skills");
 
   return (
     <section className="bg-bluebright pt-4 md:pt-6 tracking-widest">
       <div className="flex bg-bluebright  justify-center">
         <h1 className="font-bold text-white  text-xl md:text-3xl pb-4 md:pb-6">
-          SKILLS
+          {t("title")}
         </h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 w-full">
@@ -46,26 +48,17 @@ export function Skills() {
           id="webdev"
         >
           <h2 className="pl-[3vw] font-bold tracking-wide text-white text-lg md:text-xl">
-            WEB DEVELOPMENT
+            {t("WEBDEV")}
           </h2>
           <p className="py-[6vw] text-base md:text-lg lg:text-xl text-white">
-            As a recent graduate of an intensive frontend development bootcamp{" "}
+            {t("SkillsText1")}{" "}
             <a
               href="https://startsteps.org/en/partner/devhaus-leipzig"
               className="hover:underline"
             >
               @DEVHAUS Leipzig
             </a>
-            , I&apos;m fascinated by the infinite possibilities in the world of
-            coding. My current focus lies in building modern web applications
-            with Next.js, while continuously expanding my technical toolkit.
-            Beyond frontend development, I&apos;ve gained valuable insights into
-            backend technologies, working with databases and headless CMS
-            solutions. I&apos;m passionate about creating intuitive user
-            experiences and constantly enhance my skills through hands-on
-            project work, developing both websites and applications. My
-            curiosity drives me to stay current with emerging technologies and
-            best practices in the ever-evolving development landscape.
+            {t("SkillsText2")}
           </p>
           <div className="grid grid-cols-4 lg:grid-cols-7 gap-[3vw] mt-4 text-base md:text-lg text-white">
             <a
@@ -285,21 +278,11 @@ export function Skills() {
           id="translation"
         >
           <h2 className="p-[3vw] font-bold tracking-wide text-lg md:text-2xl text-white">
-            TRANSLATION
+            {t("TRANS")}
           </h2>
           <div className="flex flex-col justify-center gap-[3vw]">
             <p className="text-base md:text-lg text-white lg:text-xl tracking-widest">
-              As a translator with a Master&apos;s degree in Translatology, I
-              specialize in precise and culturally nuanced translations between
-              German, French, and English. My expertise has been shaped through
-              extensive freelance work across diverse projects, complemented by
-              immersive experiences living in West African countries like Togo
-              and Niger. This combination of academic foundation, professional
-              practice, and cultural immersion enables me to deliver
-              translations that are not only linguistically accurate but also
-              culturally authentic. I bring particular attention to capturing
-              subtle meanings and contextual nuances that are essential for
-              effective cross-cultural communication.
+              {t("TransText")}
             </p>
             <div className="flex flex-row justify-between mx-10 sm:mx-28  mt-4 text-base">
               {/* <div className="flex flex-col items-center">

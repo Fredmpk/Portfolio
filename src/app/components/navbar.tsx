@@ -1,8 +1,11 @@
 import React from "react";
 import { BurgerMenu } from "./burger-menu";
 import Link from "next/link";
+import LocaleSwitcher from "./LocaleSwitcher";
+import { useTranslations } from "next-intl";
 
 export function Navbar() {
+  const t = useTranslations("Navbar");
   return (
     <div className="fixed w-full bg-white opacity-90 shadow-md z-50">
       <nav className="flex items-center justify-between font-primary font-bold text-lg md:text-2xl tracking-wide mx-4 md:my-4 h-12 md:h-16">
@@ -35,14 +38,17 @@ export function Navbar() {
           id="navbar__right"
         >
           <li>
-            <Link href="/#skills">skills</Link>
+            <LocaleSwitcher />
           </li>
           <li>
-            <Link href="/#bio">bio</Link>
+            <Link href="/#skills">{t("skills")}</Link>
+          </li>
+          <li>
+            <Link href="/#bio">{t("bio")}</Link>
           </li>
 
           <li>
-            <Link href="/#projects">projects</Link>
+            <Link href="/#projects">{t("projects")}</Link>
           </li>
           {/* <li>
             <a href="#">kontakt</a>

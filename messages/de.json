@@ -1,0 +1,55 @@
+{
+  "Navbar": {
+    "skills": "skills",
+    "bio": "bio",
+    "projects": "projekte"
+  },
+
+  "Hero": {
+    "WebDev": "WEBENTWICKLUNG",
+    "Transl": "ÜBERSETZUNG"
+  },
+
+  "Words": {
+    "hi": "Hi,",
+    "im": "Ich",
+    "bin": "bin",
+    "fred": "Fred,",
+    "an": "ein",
+    "aspiring": "angehender",
+    "frontend": "Frontend",
+    "developer": "Entwickler.",
+    "herbe": "",
+    "i": "Ich",
+    "studied": "habe",
+    "translation": "Übersetzen",
+    "studiert": "studiert",
+    "and": "und",
+    "then": "dann",
+    "found": "meine",
+    "my": "Liebe",
+    "passion": "zum",
+    "for1": "Coden",
+    "le": "",
+    "coding": "gefunden.",
+    "now": "Jetzt",
+    "im2": "suche",
+    "looking": "ich",
+    "for2": "nach",
+    "a": "einem",
+    "fulfilling": "spannenden",
+    "job": "Job,",
+    "to": "um",
+    "combine": "beides",
+    "zu": "zu",
+    "both": "verbinden."
+  },
+  "Skills": {
+    "title": "SKILLS",
+    "WEBDEV": "WEBENTWICKLUNG",
+    "SkillsText1": "Als Absolvent eines intensiven Frontend-Development-Bootcamps des",
+    "SkillsText2": " faszinieren mich die unendlichen Möglichkeiten in der Welt des Programmierens. Mein aktueller Schwerpunkt liegt auf der Entwicklung moderner Webanwendungen mit Next.js, während ich mein technisches Repertoire kontinuierlich erweitere. Über die Frontend-Entwicklung hinaus habe ich wertvolle Einblicke in Backend-Technologien gewonnen und arbeite mit Datenbanken und Headless-CMS-Lösungen. Ich bin leidenschaftlich daran interessiert, intuitive Benutzererlebnisse zu schaffen und erweitere meine Fähigkeiten ständig durch praktische Projektarbeit, sowohl bei der Entwicklung von Websites als auch Anwendungen. Meine Neugier treibt mich dazu an, stets über neue Technologien und Best Practices in der dynamischen Welt der Softwareentwicklung informiert zu bleiben.",
+    "TRANS": "ÜBERSETZUNG",
+    "TransText": "Als Übersetzer mit einem Master in Translatologie spezialisiere ich mich auf präzise und kulturell nuancierte Übersetzungen zwischen Deutsch, Französisch und Englisch. Meine Expertise wurde durch freiberufliche Arbeit in verschiedenen Projekten geprägt, ergänzt durch intensive Aufenthalte in westafrikanischen Ländern wie Togo und Niger. Diese Kombination aus akademischer Grundlage, beruflicher Praxis und kulturellen Erfahrungen ermöglicht es mir, Übersetzungen zu liefern, die nicht nur sprachlich präzise, sondern auch kulturell authentisch sind. Ich lege besonderen Wert darauf, subtile Bedeutungen und kontextuelle Nuancen zu erfassen, die für eine effektive interkulturelle Kommunikation wesentlich sind."
+  }
+}

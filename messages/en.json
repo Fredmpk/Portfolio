@@ -1,0 +1,54 @@
+{
+  "Navbar": {
+    "skills": "skills",
+    "bio": "bio",
+    "projects": "projets"
+  },
+  "Hero": {
+    "WebDev": "WEB DEVELOPMENT",
+    "Transl": "TRANSLATION"
+  },
+
+  "Words": {
+    "hi": "Hi,",
+    "im": "I'm",
+    "bin": "",
+    "fred": "Fred,",
+    "an": "an",
+    "aspiring": "aspiring",
+    "frontend": "frontend",
+    "developer": "developer.",
+    "herbe": "",
+    "i": "I",
+    "studied": "studied",
+    "translation": "translation",
+    "studiert": "",
+    "and": "and",
+    "then": "then",
+    "found": "found",
+    "my": "my",
+    "passion": "passion",
+    "for1": "for",
+    "le": "",
+    "coding": "coding.",
+    "now": "Now",
+    "im2": "I'm",
+    "looking": "looking",
+    "for2": "for",
+    "a": "a",
+    "fulfilling": "fulfilling",
+    "job": "job",
+    "to": "to",
+    "combine": "combine",
+    "zu": "",
+    "both": "both."
+  },
+  "Skills": {
+    "title": "SKILLS",
+    "WEBDEV": "WEB DEVELOPMENT",
+    "SkillsText1": "As a recent graduate of an intensive frontend development bootcamp",
+    "SkillsText2": ", I'm fascinated by the infinite possibilities in the world of coding. My current focus lies in building modern web applications with Next.js, while continuously expanding my technical toolkit. Beyond frontend development, I've gained valuable insights into backend technologies, working with databases and headless CMS solutions. I'm passionate about creating intuitive user experiences and constantly enhance my skills through hands-on project work, developing both websites and applications. My curiosity drives me to stay current with emerging technologies and best practices in the ever-evolving development landscape.",
+    "TRANS": "TRANSLATION",
+    "TransText": "As a translator with a Master's degree in Translatology, I specialize in precise and culturally nuanced translations between German, French, and English. My expertise has been shaped through extensive freelance work across diverse projects, complemented by immersive experiences living in West African countries like Togo and Niger. This combination of academic foundation, professional practice, and cultural immersion enables me to deliver translations that are not only linguistically accurate but also culturally authentic. I bring particular attention to capturing subtle meanings and contextual nuances that are essential for effective cross-cultural communication."
+  }
+}

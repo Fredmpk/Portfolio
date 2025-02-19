@@ -1,0 +1,53 @@
+{
+  "Navbar": {
+    "skills": "skills",
+    "bio": "bio",
+    "projects": "projets"
+  },
+  "Hero": {
+    "WebDev": "DÉVELOPMENT WEB",
+    "Transl": "TRADUCTION"
+  },
+  "Words": {
+    "hi": "Salut,",
+    "im": "je",
+    "bin": "suis",
+    "fred": "Fred,",
+    "an": "un",
+    "aspiring": "développeur",
+    "frontend": "front-end",
+    "developer": "en",
+    "herbe": "herbe.",
+    "i": "J'ai",
+    "studied": "étudié",
+    "translation": "la",
+    "studiert": "traduction",
+    "and": "puis",
+    "then": "j'ai",
+    "found": "découvert",
+    "my": "ma",
+    "passion": "passion",
+    "for1": "pour",
+    "le": "le",
+    "coding": "code.",
+    "now": "",
+    "im2": "",
+    "looking": "Maintentant",
+    "for2": "je",
+    "a": "cherche",
+    "fulfilling": "un",
+    "job": "emploi",
+    "to": "épanouissant",
+    "combine": "alliant",
+    "zu": "les",
+    "both": "deux."
+  },
+  "Skills": {
+    "title": "COMPÉTENCES",
+    "WEBDEV": "DÉVELOPPEMENT WEB",
+    "SkillsText1": "En tant que récent diplômé d'un bootcamp intensif de développement front-end du",
+    "SkillsText2": ", je suis fasciné par les possibilités infinies dans le monde du codage. Je me concentre actuellement sur la création d'applications web modernes avec Next.js, tout en élargissant continuellement ma boîte à outils technique. Au-delà du développement front-end, j'ai acquis de précieuses connaissances en technologies backend, travaillant avec des bases de données et des solutions CMS headless. Je suis passionné par la création d'expériences utilisateur intuitives et j'améliore constamment mes compétences à travers des projets pratiques, développant à la fois des sites web et des applications. Ma curiosité me motive à suivre les avancées technologiques et les bonnes pratiques dans le domaine dynamique du développement logiciel.",
+    "TRANS": "TRADUCTION",
+    "TransText": "Diplômé d'un Master en Traductologie, je suis spécialisé dans les traductions précises et culturellement nuancées entre l'allemand, le français et l'anglais. Mon expertise a été façonnée par un travail freelance extensif sur divers projets, complété par des expériences immersives de vie dans des pays d'Afrique de l'Ouest comme le Togo et le Niger. Cette combinaison de formation académique, de pratique professionnelle et d'immersion culturelle me permet de fournir des traductions qui sont non seulement linguistiquement exactes mais aussi culturellement authentiques. J'accorde une attention particulière à la capture des subtilités et des nuances contextuelles qui sont essentielles pour une communication interculturelle efficace."
+  }
+}
