@@ -50,5 +50,25 @@
     "SkillsText2": ", I'm fascinated by the infinite possibilities in the world of coding. My current focus lies in building modern web applications with Next.js, while continuously expanding my technical toolkit. Beyond frontend development, I've gained valuable insights into backend technologies, working with databases and headless CMS solutions. I'm passionate about creating intuitive user experiences and constantly enhance my skills through hands-on project work, developing both websites and applications. My curiosity drives me to stay current with emerging technologies and best practices in the ever-evolving development landscape.",
     "TRANS": "TRANSLATION",
     "TransText": "As a translator with a Master's degree in Translatology, I specialize in precise and culturally nuanced translations between German, French, and English. My expertise has been shaped through extensive freelance work across diverse projects, complemented by immersive experiences living in West African countries like Togo and Niger. This combination of academic foundation, professional practice, and cultural immersion enables me to deliver translations that are not only linguistically accurate but also culturally authentic. I bring particular attention to capturing subtle meanings and contextual nuances that are essential for effective cross-cultural communication."
+  },
+  "Bio": {
+    "TitleBio": "Bio",
+    "Location": "Leipzig, Germany",
+    "Prof": "Web Developer | Translator",
+    "Exp": " Professional Experiences",
+    "FreeLTr": "🌐 Freelance Translator since 2022",
+    "Languages": "French - German / English-German",
+    "FreeLCr": "🛠️ Freelance Craftsman since 2016",
+    "Education": "Education",
+    "Devhaus": "🚀 Frontend Developer - Devhaus Leipzig | 2024",
+    "Translatology": "    🎓 M.A. Translatology - Universität Leipzig | 2018-2022",
+    "FieldsTr": " Fields: Law, Medicine, Business, Tourism and Linguistics",
+    "Afr": " 🎓 B.A. African Studies - Universität Leipzig | 2013-2018",
+    "FieldsAfr": "Fields: Haussa, Language, Culture, Media, Social Structures, Politics and Economy",
+    "IntExp": "International Experiences",
+    "Niamey": " Semester Abroad - Université Abdou Moumouni, Niger | 2015/2016",
+    "Soc": " Sociology and Haussa course",
+    "Togo": "Volunteer work - Collège Protestant, Kpalimé, Togo | 2012/2013",
+    "TogoWork": "Support for visually impaired students in an inclusive school."
   }
 }

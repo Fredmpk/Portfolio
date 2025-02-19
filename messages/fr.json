@@ -49,5 +49,25 @@
     "SkillsText2": ", je suis fasciné par les possibilités infinies dans le monde du codage. Je me concentre actuellement sur la création d'applications web modernes avec Next.js, tout en élargissant continuellement ma boîte à outils technique. Au-delà du développement front-end, j'ai acquis de précieuses connaissances en technologies backend, travaillant avec des bases de données et des solutions CMS headless. Je suis passionné par la création d'expériences utilisateur intuitives et j'améliore constamment mes compétences à travers des projets pratiques, développant à la fois des sites web et des applications. Ma curiosité me motive à suivre les avancées technologiques et les bonnes pratiques dans le domaine dynamique du développement logiciel.",
     "TRANS": "TRADUCTION",
     "TransText": "Diplômé d'un Master en Traductologie, je suis spécialisé dans les traductions précises et culturellement nuancées entre l'allemand, le français et l'anglais. Mon expertise a été façonnée par un travail freelance extensif sur divers projets, complété par des expériences immersives de vie dans des pays d'Afrique de l'Ouest comme le Togo et le Niger. Cette combinaison de formation académique, de pratique professionnelle et d'immersion culturelle me permet de fournir des traductions qui sont non seulement linguistiquement exactes mais aussi culturellement authentiques. J'accorde une attention particulière à la capture des subtilités et des nuances contextuelles qui sont essentielles pour une communication interculturelle efficace."
+  },
+  "Bio": {
+    "TitleBio": "Bio",
+    "Location": "Leipzig, Allemagne",
+    "Prof": "Développeur Web | Traducteur",
+    "Exp": "Expériences professionnelles",
+    "FreeLTr": "🌐 Traducteur indépendant depuis 2022",
+    "Languages": "Français - Allemand / Anglais - Allemand",
+    "FreeLCr": "🛠️ Artisan indépendant depuis 2016",
+    "Education": "Éducation",
+    "Devhaus": "🚀 Développeur Frontend - Devhaus Leipzig | 2024",
+    "Translatology": "🎓 M.A. Traductologie - Université de Leipzig | 2018-2022",
+    "FieldsTr": "Domaines : Droit, Médecine, Commerce, Tourisme et Linguistique",
+    "Afr": "🎓 B.A. Études africaines - Université de Leipzig | 2013-2018",
+    "FieldsAfr": "Domaines : Haoussa, Langue, Culture, Médias, Société, Politique et Économie",
+    "IntExp": "Expériences internationales",
+    "Niamey": "Semestre à l'étranger - Université Abdou Moumouni, Niger | 2015/2016",
+    "Soc": "Cours de sociologie et de haoussa",
+    "Togo": "Travail bénévole - Collège Protestant, Kpalimé, Togo | 2012/2013",
+    "TogoWork": "Soutien aux élèves malvoyants dans une école inclusive."
   }
 }

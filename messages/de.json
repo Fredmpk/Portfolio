@@ -51,5 +51,26 @@
     "SkillsText2": " faszinieren mich die unendlichen Möglichkeiten in der Welt des Programmierens. Mein aktueller Schwerpunkt liegt auf der Entwicklung moderner Webanwendungen mit Next.js, während ich mein technisches Repertoire kontinuierlich erweitere. Über die Frontend-Entwicklung hinaus habe ich wertvolle Einblicke in Backend-Technologien gewonnen und arbeite mit Datenbanken und Headless-CMS-Lösungen. Ich bin leidenschaftlich daran interessiert, intuitive Benutzererlebnisse zu schaffen und erweitere meine Fähigkeiten ständig durch praktische Projektarbeit, sowohl bei der Entwicklung von Websites als auch Anwendungen. Meine Neugier treibt mich dazu an, stets über neue Technologien und Best Practices in der dynamischen Welt der Softwareentwicklung informiert zu bleiben.",
     "TRANS": "ÜBERSETZUNG",
     "TransText": "Als Übersetzer mit einem Master in Translatologie spezialisiere ich mich auf präzise und kulturell nuancierte Übersetzungen zwischen Deutsch, Französisch und Englisch. Meine Expertise wurde durch freiberufliche Arbeit in verschiedenen Projekten geprägt, ergänzt durch intensive Aufenthalte in westafrikanischen Ländern wie Togo und Niger. Diese Kombination aus akademischer Grundlage, beruflicher Praxis und kulturellen Erfahrungen ermöglicht es mir, Übersetzungen zu liefern, die nicht nur sprachlich präzise, sondern auch kulturell authentisch sind. Ich lege besonderen Wert darauf, subtile Bedeutungen und kontextuelle Nuancen zu erfassen, die für eine effektive interkulturelle Kommunikation wesentlich sind."
+  },
+
+  "Bio": {
+    "TitleBio": "Bio",
+    "Location": "Leipzig, Deutschland",
+    "Prof": "Webentwickler | Übersetzer",
+    "Exp": "Berufliche Erfahrungen",
+    "FreeLTr": "🌐 Freiberuflicher Übersetzer seit 2022",
+    "Languages": "Französisch - Deutsch / Englisch - Deutsch",
+    "FreeLCr": "🛠️ Selbständiger Handwerker seit 2016",
+    "Education": "Bildung",
+    "Devhaus": "🚀 Frontend-Entwickler - Devhaus Leipzig | 2024",
+    "Translatology": "🎓 M.A. Translatologie - Universität Leipzig | 2018-2022",
+    "FieldsTr": "Fachgebiete: Recht, Medizin, Wirtschaft, Tourismus und Linguistik",
+    "Afr": "🎓 B.A. Afrikastudien - Universität Leipzig | 2013-2018",
+    "FieldsAfr": "Fachgebiete: Hausa, Sprache, Kultur, Medien, Gesellschaft, Politik und Wirtschaft",
+    "IntExp": "Internationale Erfahrungen",
+    "Niamey": "Auslandssemester - Université Abdou Moumouni, Niger | 2015/2016",
+    "Soc": "Soziologie- und Hausa-Kurs",
+    "Togo": "Freiwilligenarbeit - Collège Protestant, Kpalimé, Togo | 2012/2013",
+    "TogoWork": "Unterstützung sehbehinderter Schüler*innen an einer inklusiven Schule."
   }
 }
