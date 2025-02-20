@@ -23,10 +23,10 @@ export function Navbar() {
             <path
               d="M48.5001 93L46.5001 73.5M44.5001 54L18.0001 61.5L11 31L34 43L44.5001 18L51.5001 40L72.5001 8V48.5L44.5001 54ZM44.5001 54L46.5001 73.5M46.5001 73.5L34.0001 78L61.5001 67.5"
               stroke="black"
-              stroke-opacity="0.76"
-              stroke-width="8"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeOpacity="0.76"
+              strokeWidth="8"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
           <Link href="/" className=" md:ml-4">

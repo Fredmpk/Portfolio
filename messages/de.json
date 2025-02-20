@@ -72,5 +72,16 @@
     "Soc": "Soziologie- und Hausa-Kurs",
     "Togo": "Freiwilligenarbeit - Collège Protestant, Kpalimé, Togo | 2012/2013",
     "TogoWork": "Unterstützung sehbehinderter Schüler*innen an einer inklusiven Schule."
+  },
+  "Projects": {
+    "TitleProjects": "PROJEKTE",
+    "titleBoo": "Mein Bootcamp @Devhaus",
+    "PrDev": "Im September habe ich erfolgreich die intensive Weiterbildung bei Devhaus Leipzig zum Frontend-Entwickler abgeschlossen. Während dieses Programms habe ich ein umfassendes Verständnis der Grundlagen der Frontend-Entwicklung erworben, darunter HTML, CSS, JavaScript, TypeScript, React und Next.js. Zudem habe ich wertvolle Einblicke in Backend-Technologien wie Node.js, Express und SQL gewonnen. Der Kurs war zwar herausfordernd und hat mich an meine Grenzen gebracht, aber es war eine unglaublich bereichernde Erfahrung, die mich sowohl technisch als auch persönlich wachsen ließ. Das Programm umfasste auch essenzielle Designprinzipien mit einem Fokus auf UI/UX und Figma und vermittelte mir praktische Kenntnisse in Tools wie Git, Docker, Prisma und VS Code. Durch praxisnahe Team- und Einzelprojekte, die reale Szenarien simulierten, konnte ich die notwendigen Fähigkeiten und das Selbstvertrauen entwickeln, um mein neu erlerntes Wissen in einem professionellen Umfeld anzuwenden.",
+    "titlePo": "Meine Portfolio-Seite",
+    "PrPort": "Willkommen in meinem Portfolio! Ich arbeite kontinuierlich daran, meine Webseite zu verbessern und zu erweitern, also schau gerne immer mal wieder vorbei, um Neues zu entdecken. Gerade habe ich die Website auf Mehrsprachigkeit umgestellt, zukünftige Updates könnten ein Kontaktformular oder sogar einen Blog umfassen. Auch das Design könnte sich weiterentwickeln – wie viel rein- und rausfliegt, hängt von meiner Kreativität und meiner Laune ab. Bleib gespannt!",
+    "titleBi": "Website für einen Fahrradhersteller",
+    "PrBike": "Dies war mein erstes Projekt nach dem Bootcamp – eine Website für einen Freund, der maßgeschneiderte Cargobikes herstellt. Ich habe das Design in Figma erstellt, es aber genau auf die Wünsche und Vorstellungen meines Freundes abgestimmt. Die Website habe ich mit Next.js gebaut, um eine schnelle und moderne Benutzererfahrung zu gewährleisten. Für die nahtlose Verwaltung der Inhalte habe ich Sanity als Headless CMS verwendet. Dieses Projekt war eine großartige Gelegenheit, das Gelernte anzuwenden, neue Technologien auszuprobieren und wertvolle praktische Erfahrungen in der Webentwicklung zu sammeln.",
+    "titleWer": "Eine App-Idee: WerIstSchuld?",
+    "PrWer": "Für ein zukünftiges Projekt möchte ich mich mit dem Thema Steuerbetrug und Sozialbetrug beschäftigen. Mein Plan ist es, eine App zu entwickeln, die offizielle statistische Daten zu diesen Themen verarbeitet und verknüpft. Mithilfe ansprechender Animationen und interaktiver Elemente soll die App den Nutzern Einblicke in die finanziellen Auswirkungen und mögliche Gegenmaßnahmen geben. Zusätzlich möchte ich Beispielrechnungen integrieren, um zu veranschaulichen, wie die durch Steuerbetrug verlorenen Gelder sozial umverteilt werden könnten. Leider ist dies bisher nur eine Idee."
   }
 }

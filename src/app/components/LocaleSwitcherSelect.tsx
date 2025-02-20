@@ -6,6 +6,7 @@ import clsx from "clsx";
 import { useTransition } from "react";
 import { Locale } from "@/i18n/config";
 import { setUserLocale } from "@/services/locale";
+import { useVisibility } from "../contexts/VisibilityContext";
 
 type Props = {
   defaultValue: string;
@@ -19,10 +20,13 @@ export default function LocaleSwitcherSelect({
   label,
 }: Props) {
   const [isPending, startTransition] = useTransition();
+  const { isHeroInView } = useVisibility();
   function onChange(value: string) {
     const locale = value as Locale;
     startTransition(() => {
       setUserLocale(locale);
+
+      if (!isHeroInView) return;
       const checkCookie = setInterval(() => {
         if (document.cookie.includes(`NEXT_LOCALE=${locale}`)) {
           clearInterval(checkCookie);

@@ -1,8 +1,10 @@
 // components/Projects.tsx
 
+import { useTranslations } from "next-intl";
 import { Carousel } from "./projects-carousel";
 
 export function Projects() {
+  const t = useTranslations("Projects");
   return (
     <section className="projects-container bg-bluebright tracking-widest">
       <div
@@ -10,7 +12,7 @@ export function Projects() {
         id="projects"
       >
         <h1 className="tracking-wide text-xl md:text-3xl text-white font-bold">
-          PROJECTS
+          {t("TitleProjects")}
         </h1>
       </div>
       <Carousel />

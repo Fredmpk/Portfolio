@@ -3,6 +3,7 @@ import { getLocale, getMessages } from "next-intl/server";
 import { Footer } from "./components/footer";
 import { Navbar } from "./components/navbar";
 import "./globals.css";
+import { VisibilityProvider } from "./contexts/VisibilityContext";
 
 export const metadata = {
   title: "Frederik König",
@@ -22,13 +23,15 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body className="flex flex-col min-h-screen">
-        <NextIntlClientProvider messages={messages}>
-          <Navbar />
-          <main className="flex-grow">{children}</main>
-          <footer>
-            <Footer />
-          </footer>
-        </NextIntlClientProvider>
+        <VisibilityProvider>
+          <NextIntlClientProvider messages={messages}>
+            <Navbar />
+            <main className="flex-grow">{children}</main>
+            <footer>
+              <Footer />
+            </footer>
+          </NextIntlClientProvider>
+        </VisibilityProvider>
       </body>
     </html>
   );

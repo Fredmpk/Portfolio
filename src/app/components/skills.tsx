@@ -282,7 +282,7 @@ export function Skills() {
           </h2>
           <div className="flex flex-col justify-center gap-[3vw]">
             <p className="text-base md:text-lg text-white lg:text-xl tracking-widest">
-              {t("TransText")}
+    {t("TransText")}
             </p>
             <div className="flex flex-row justify-between mx-10 sm:mx-28  mt-4 text-base">
               {/* <div className="flex flex-col items-center">

@@ -69,5 +69,16 @@
     "Soc": "Cours de sociologie et de haoussa",
     "Togo": "Travail bénévole - Collège Protestant, Kpalimé, Togo | 2012/2013",
     "TogoWork": "Soutien aux élèves malvoyants dans une école inclusive."
+  },
+  "Projects": {
+    "TitleProjects": "PROJETS",
+    "titleBoo": "Mon Bootcamp @Devhaus",
+    "PrDev": "En septembre, j’ai réussi à terminer un programme de formation intensif chez Devhaus Leipzig, où j’ai poursuivi mon objectif de devenir développeur front-end. Au cours de cette formation, j’ai acquis une compréhension approfondie des bases du développement front-end, y compris HTML, CSS, JavaScript, TypeScript, React et Next.js. J’ai également obtenu des connaissances précieuses sur les technologies backend comme Node.js, Express et SQL. Bien que le cours ait été exigeant et m’ait poussé à mes limites, ce fut une expérience incroyablement enrichissante qui m’a permis de progresser tant sur le plan technique que personnel. Le programme couvrait aussi les principes essentiels du design, avec un accent sur l’UI/UX et Figma, et m’a fourni une connaissance pratique d’outils comme Git, Docker, Prisma et VS Code. Grâce à des projets pratiques en équipe et en solo, simulant des scénarios réels, j’ai pu développer les compétences et la confiance nécessaires pour appliquer mes nouvelles connaissances dans un cadre professionnel.",
+    "titlePo": "Ma Page Portfolio",
+    "PrPort": "Bienvenue sur mon portfolio ! Je travaille continuellement à améliorer et à enrichir mon site web, alors n’hésite pas à revenir régulièrement pour voir les nouveautés. De futures mises à jour pourraient inclure la prise en charge de plusieurs langues, un formulaire de contact ou même un blog. Le design pourrait également évoluer – ce qui apparaîtra ou disparaîtra dépendra de ma créativité et de mon inspiration du moment. Reste connecté !",
+    "titleBi": "Site Web pour un Fabricant de Vélos",
+    "PrBike": "Ceci était mon premier projet après le bootcamp – un site web pour un ami qui fabrique des vélos cargo sur mesure. J’ai conçu le design sur Figma, en l’adaptant aux souhaits et à la vision de mon ami. J’ai construit le site avec Next.js pour offrir une expérience rapide et moderne. J’ai utilisé Sanity comme CMS headless pour une gestion efficace du contenu. C’était une excellente occasion de mettre en pratique mes connaissances, d’expérimenter de nouvelles technologies et d’acquérir une expérience concrète dans le développement web.",
+    "titleWer": "Une Idée d’Application : WerIstSchuld?",
+    "PrWer": "Pour un futur projet, je souhaite me concentrer sur la question de la fraude fiscale et sociale. Mon objectif est de développer une application qui traite et relie des données statistiques officielles sur ces sujets. Grâce à des animations engageantes et des fonctionnalités interactives, l’application fournira aux utilisateurs des informations sur les impacts financiers et les solutions possibles. De plus, j’aimerais inclure des exemples de calculs pour illustrer comment les fonds perdus à cause de la fraude fiscale pourraient être réaffectés à des fins sociales. Malheureusement, ce n’est encore qu’une idée pour le moment."
   }
 }

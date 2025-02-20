@@ -1,8 +1,10 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { TypewriterEffect } from "./ui/typewriter-effect";
 import { useTranslations } from "next-intl";
 import useTypewriterWords from "../lib/utils/words";
+import { useInView } from "motion/react";
+import { useVisibility } from "../contexts/VisibilityContext";
 
 export default function Hero() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -11,6 +13,14 @@ export default function Hero() {
   const [showThird, setShowThird] = useState(false);
   const t = useTranslations("Hero");
   const { wordsOne, wordsTwo, wordsThree } = useTypewriterWords();
+  const ref = useRef(null); // Create ref manually
+  const inView = useInView(ref, { amount: 0.1 }); // Pass ref to useInView
+
+  const { setIsHeroInView } = useVisibility();
+
+  useEffect(() => {
+    setIsHeroInView(inView);
+  }, [inView, setIsHeroInView]);
   useEffect(() => {
     const firstTimer = setTimeout(() => {
       setShowFirst(true);
@@ -36,7 +46,8 @@ export default function Hero() {
   }, []);
 
   return (
-    <div
+    <section
+      ref={ref}
       className="bg-bluepull mt-12 md:mt-24 flex flex-col md:flex-row text-white
 "
     >
@@ -72,6 +83,6 @@ export default function Hero() {
           {t("Transl")}
         </h1>
       </div>
-    </div>
+    </section>
   );
 }
