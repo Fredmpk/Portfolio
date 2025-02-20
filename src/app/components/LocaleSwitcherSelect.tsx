@@ -23,9 +23,12 @@ export default function LocaleSwitcherSelect({
     const locale = value as Locale;
     startTransition(() => {
       setUserLocale(locale);
-      setTimeout(() => {
-        window.location.reload();
-      }, 100);
+      const checkCookie = setInterval(() => {
+        if (document.cookie.includes(`NEXT_LOCALE=${locale}`)) {
+          clearInterval(checkCookie);
+          window.location.reload();
+        }
+      }, 50);
     });
   }
 
