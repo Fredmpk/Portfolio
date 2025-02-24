@@ -4,6 +4,7 @@ import { Footer } from "./components/footer";
 import { Navbar } from "./components/navbar";
 import "./globals.css";
 import { VisibilityProvider } from "./contexts/VisibilityContext";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
   title: "Frederik König",
@@ -32,6 +33,7 @@ export default async function RootLayout({
             </footer>
           </NextIntlClientProvider>
         </VisibilityProvider>
+        <Analytics />
       </body>
     </html>
   );
